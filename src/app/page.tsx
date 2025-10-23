@@ -15,7 +15,7 @@ export default function Home() {
         <div className="container mx-auto min-h-[95vh] grid grid-cols-1 sm:grid-cols-2 mt-25">
           <div className="flex flex-col items-start">
             <h1 className="text-4xl sm:text-6xl mt-5">Meet Zaakiy</h1>
-            <p className="mt-5 text-lg">
+            <p className="mt-5 text-base">
               Our very first AI enabled virtual assistant and AI customer
               support chatbot for your business
             </p>
@@ -28,7 +28,7 @@ export default function Home() {
           <h1 className="text-3xl sm:text-4xl font-bold text-[#0a0a60]">
             No Endless conversations
           </h1>
-          <p className="mt-6 text-lg font-medium text-gray-600">
+          <p className="mt-6 text-base font-medium text-gray-600">
             Responds to your customers queries 24/7 with real information.
           </p>
         </div>
@@ -37,7 +37,7 @@ export default function Home() {
             <h1 className="text-3xl sm:text-4xl font-bold text-[#0a0a60]">
               Unleashed Experience
             </h1>
-            <p className="mt-3 text-lg font-medium text-gray-600">
+            <p className="mt-3 text-base font-medium text-gray-600">
               Run your business 24/7 with Zentria AI where your customers can
               get instant answers to their queries.
             </p>
@@ -47,7 +47,7 @@ export default function Home() {
             <h1 className="text-3xl sm:text-4xl font-bold text-[#0a0a60]">
               Integrate seemlessly
             </h1>
-            <p className="mt-3 text-lg font-medium text-gray-600">
+            <p className="mt-3 text-base font-medium text-gray-600">
               AI Assistant that responds to your customers on your Website,
               WhatsApp and Social medias
             </p>
@@ -70,9 +70,9 @@ export default function Home() {
                 Optimize Customer Xperience
               </p>
               <h1 className="text-2xl sm:text-4xl text-left font-bold text-gray-800 ">
-                Intaract with every new opportunity
+                Interact with every new opportunity
               </h1>
-              <p className="mt-3 text-lg font-medium text-gray-600">
+              <p className="mt-3 text-base font-medium text-gray-600">
                 ZaaKy AI optimizes your business opportunities with advanced
                 artificial intelligence.
               </p>
@@ -80,7 +80,7 @@ export default function Home() {
                 <li className="py-3">
                   <span className="flex flex-row items-center gap-9">
                     <CircleCheckBig color="#5D7DDE" />
-                    <p className="text-lg font-medium text-gray-600">
+                    <p className="text-base font-medium text-gray-600">
                       Automate customer interactions
                     </p>
                   </span>
@@ -88,7 +88,7 @@ export default function Home() {
                 <li className="py-3">
                   <span className="flex flex-row items-center gap-9">
                     <CircleCheckBig color="#5D7DDE" />
-                    <p className="text-lg font-medium text-gray-600">
+                    <p className="text-base font-medium text-gray-600">
                       24/7 continuous support
                     </p>
                   </span>
@@ -96,7 +96,7 @@ export default function Home() {
                 <li className="py-3">
                   <span className="flex flex-row items-center gap-9">
                     <CircleCheckBig color="#5D7DDE" />
-                    <p className="text-lg font-medium text-gray-600">
+                    <p className="text-base font-medium text-gray-600">
                       Communicate your information accurately
                     </p>
                   </span>
@@ -106,7 +106,7 @@ export default function Home() {
                   <span className="flex flex-row items-center gap-9">
                     <CircleCheckBig color="#5D7DDE" />
 
-                    <p className="text-lg font-medium text-gray-600">
+                    <p className="text-base font-medium text-gray-600">
                       Eliminate the waiting time
                     </p>
                   </span>
@@ -115,7 +115,7 @@ export default function Home() {
                   <span className="flex flex-row items-center gap-9">
                     <CircleCheckBig color="#5D7DDE" />
 
-                    <p className="text-lg font-medium text-gray-600">
+                    <p className="text-base font-medium text-gray-600">
                       Multilingual Support
                     </p>
                   </span>
@@ -149,7 +149,7 @@ export default function Home() {
               +65%
             </div>
             <p></p>
-            <p className="mt-8 text-lg font-medium text-[#3fe4aa]">
+            <p className="mt-8 text-base font-medium text-[#3fe4aa]">
               Customer Support Resources Saved
             </p>
           </div>
@@ -158,7 +158,7 @@ export default function Home() {
               +90%
             </div>
             <p></p>
-            <p className="mt-8 text-lg font-medium text-[#3fe4aa]">
+            <p className="mt-8 text-base font-medium text-[#3fe4aa]">
               Customer Satisfaction Score
             </p>
           </div>
@@ -167,7 +167,7 @@ export default function Home() {
           <PriceSection />
         </div>
         <div className="mt-24 flex flex-col items-center gap-2 px-10 sm:px-34">
-          <h1 className="text-center text-[#5D7DDE] font-semibold">
+          <h1 className="text-center text-[#5D7DDE] text-base">
             Want to try it out?
           </h1>
           <p className="text-3xl text-center font-bold text-[#0a0a60] delay-200">

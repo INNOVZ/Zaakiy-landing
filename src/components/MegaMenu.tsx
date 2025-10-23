@@ -89,7 +89,7 @@ export default function MegaMenu() {
       </button>
 
       {isOpen && (
-        <div className="fixed left-1/2 transform -translate-x-1/2 w-screen bg-gray-50 shadow-lg mt-8 py-6 px-8 grid grid-cols-2 gap-8 z-50 max-w-4xl rounded-[20px]">
+        <div className="fixed left-1/2 transform -translate-x-1/2 w-screen bg-gray-50 shadow-lg mt-8 py-6 px-8 grid grid-cols-2 gap-8 z-50 max-w-4xl">
           {integrationCategories.map((category, idx) => (
             <div key={idx} className="space-y-4">
               <h3 className="text-lg font-semibold text-gray-900">
