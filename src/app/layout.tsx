@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Ubuntu } from "next/font/google";
 import Nav from "@/components/NavBar";
+import Script from "next/script";
 import "./globals.css";
 
 const ubuntu = Ubuntu({
@@ -115,23 +116,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-          document.addEventListener("DOMContentLoaded", function () {
-          console.log("Chatbot script is being executed on home page");
-          var script = document.createElement('script');
-          script.src = 'https://zaakiy.vercel.app/chatbot-widget.js';
-          script.setAttribute('data-chatbot-id', '65c0a93d-d62a-4397-97e6-9d85deaaaad6');
-          script.setAttribute('data-api-url', 'https://zaakiy-production.up.railway.app');
-          document.head.appendChild(script);
-        });
-         `,
-        }}
-      />
       <body className={`${ubuntu.variable} antialiased`}>
         <Nav />
         {children}
+        <Script
+          id="zaakiy-chatbot"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                var script = document.createElement('script');
+                script.src = 'https://zaakiy.vercel.app/chat-widget.js';
+                script.setAttribute('data-chatbot-id', '65c0a93d-d62a-4397-97e6-9d85deaaaad6');
+                script.setAttribute('data-api-url', 'https://zaakiy-production.up.railway.app');
+                document.head.appendChild(script);
+              })();
+            `,
+          }}
+        />
       </body>
     </html>
   );
