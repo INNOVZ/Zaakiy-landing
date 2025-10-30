@@ -8,6 +8,7 @@ import PriceSection from "@/components/PricingCard";
 import logo from "../../public/zaakiy.svg";
 import image from "../../public/imag.svg";
 import workflow from "../../public/workflows.svg";
+import chatwindow from "../../public/ai.svg";
 
 export default function Home() {
   return (
@@ -23,6 +24,15 @@ export default function Home() {
             <button className="mt-8 hidden pointer bg-[#0a0a60] font-semibold md:flex items-center space-x-4 text-white hover:text-[#3fe4aa] duration-300 transition-colors px-5 py-3 rounded-lg gap-3">
               Try it now !
             </button>
+          </div>
+          <div className="flex justify-center items-center">
+              <Image
+                src={chatwindow}
+                alt="bot"
+                width={100}
+                height={100}
+                className="w-full sm:w-full h-auto"
+            />
           </div>
         </div>
         <div className="mt-24 text-center">

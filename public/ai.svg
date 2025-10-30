@@ -1,0 +1,201 @@
+<svg viewBox="0 0 800 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+      <feOffset dx="0" dy="10" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Background glow gradient and blur -->
+    <radialGradient id="glowGradient" cx="50%" cy="45%" r="58%">
+      <stop offset="0%" stop-color="#5a63ff" stop-opacity="0.48"/>
+      <stop offset="55%" stop-color="#5a63ff" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#5a63ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blurGlow" x="-40%" y="-40%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="52"/>
+    </filter>
+    
+    <!-- Glassmorphism helpers -->
+    <linearGradient id="glassOverlay" gradientUnits="userSpaceOnUse" x1="210" y1="150" x2="210" y2="750">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.18"/>
+    </linearGradient>
+    <linearGradient id="glassStroke" gradientUnits="userSpaceOnUse" x1="210" y1="150" x2="210" y2="750">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.25"/>
+    </linearGradient>
+    <!-- Reusable glass styles for elements -->
+    <linearGradient id="glassOverlaySmall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.16"/>
+    </linearGradient>
+    <linearGradient id="glassStrokeSmall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.28"/>
+    </linearGradient>
+    <linearGradient id="glassOverlayDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0f3d" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0a0f3d" stop-opacity="0.18"/>
+    </linearGradient>
+    <linearGradient id="glassStrokeDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.25"/>
+    </linearGradient>
+    <clipPath id="panelClip">
+      <rect x="210" y="150" width="400" height="600" rx="20"/>
+    </clipPath>
+    <!-- Bottom fade mask for main chat window -->
+    <linearGradient id="chatBottomFade" gradientUnits="userSpaceOnUse" x1="0" y1="150" x2="0" y2="900">
+      <stop offset="0%" stop-color="white" stop-opacity="1"/>
+      <stop offset="85%" stop-color="white" stop-opacity="1"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="mask-chat-fade" maskUnits="userSpaceOnUse" x="210" y="150" width="400" height="770">
+      <rect x="210" y="150" width="400" height="750" fill="url(#chatBottomFade)"/>
+    </mask>
+  </defs>
+  
+  <!-- Background Glows (behind everything) -->
+  <g opacity="0.95">
+    <ellipse cx="410" cy="520" rx="240" ry="170" fill="url(#glowGradient)" filter="url(#blurGlow)"/>
+    <ellipse cx="410" cy="260" rx="190" ry="120" fill="url(#glowGradient)" filter="url(#blurGlow)" opacity="0.6"/>
+  </g>
+  
+  <!-- Main Chat Window -->
+  <g filter="url(#shadow)" mask="url(#mask-chat-fade)">
+    <!-- Glass background: blurred glow clipped to panel, with translucent overlay -->
+    <g clip-path="url(#panelClip)">
+      <rect x="210" y="150" width="400" height="600" fill="url(#glowGradient)" filter="url(#blurGlow)" opacity="0.85"/>
+      <rect x="210" y="150" width="400" height="600" rx="20" fill="url(#glassOverlay)" stroke="url(#glassStroke)" stroke-width="1.2"/>
+    </g>
+    
+    <!-- Chat Header - Solid Deep Navy to match app -->
+    <rect x="210" y="150" width="400" height="80" rx="20" fill="#0a0f3d"/>
+    <rect x="210" y="210" width="400" height="20" rx="8" fill="#0a0f3d"/>
+    
+    <!-- Avatar Circle with Logo -->
+    <circle cx="250" cy="190" r="25" fill="none" stroke="#4a5583" stroke-width="2"/>
+    <!-- Logo Z inside circle -->
+    <path d="M 243 180 L 257 180 L 243 200 L 257 200" fill="none" stroke="#4a5583" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Header Text -->
+    <text x="290" y="190" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">Zaakiy AI</text>
+    
+    <!-- Online Status Dot -->
+    <circle cx="399" cy="185" r="5" fill="#21e489ff"/>
+    
+    <!-- Close Button -->
+    <circle cx="560" cy="190" r="18" fill="white"/>
+    <text x="560" y="197" font-family="Arial, sans-serif" font-size="20" fill="#0a0f3d" text-anchor="middle">×</text>
+    
+    <!-- Chat Body Background - light neutral -->
+    <rect x="210" y="230" width="400" height="620" fill="#f5f6fa"/>
+    
+    <!-- Bot Message 1 - white bubble -->
+    <rect x="230" y="260" width="310" height="55" rx="20" fill="#ffffff" stroke="#e6e8f0" stroke-width="1"/>
+    <rect x="230" y="260" width="280" height="60" rx="18" fill="#ffffff" stroke="#e6e8f0" stroke-width="0.8"/>
+    <foreignObject x="240" y="270" width="260" height="40">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Arial, sans-serif; font-size: 14px; color: #333; line-height: 1.4;">
+        Hi! I'm Zaakiy your AI assistant. How can I help you today?
+      </div>
+    </foreignObject>
+    
+    <!-- User Message 1 -->
+    <rect x="380" y="345" width="210" height="45" rx="18" fill="#12185a"/>
+    <text x="485" y="373" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">What are your pricing plans?</text>
+    
+    <!-- Bot Message 2 -->
+    <rect x="230" y="415" width="300" height="70" rx="18" fill="#ffffff" stroke="#e6e8f0" stroke-width="1"/>
+    <foreignObject x="240" y="425" width="280" height="50">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Arial, sans-serif; font-size: 14px; color: #333; line-height: 1.4;">
+        Hi, We offer flexible plans starting at $40/month. Would you like to know more?
+      </div>
+    </foreignObject>
+    
+    <!-- User Message 2 -->
+    <rect x="500" y="510" width="90" height="40" rx="18" fill="#12185a"/>
+    <text x="545" y="535" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Yes, please!</text>
+
+    <!-- Bot Typing Indicator -->
+    <rect x="230" y="575" width="100" height="45" rx="18" fill="#ffffff" stroke="#e6e8f0" stroke-width="1"/>
+    <circle cx="260" cy="597.5" r="5" fill="#999">
+      <animate attributeName="cy" values="597.5;587.5;597.5" dur="1.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="597.5" r="5" fill="#999">
+      <animate attributeName="cy" values="597.5;587.5;597.5" dur="1.4s" begin="0.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="597.5" r="5" fill="#999">
+      <animate attributeName="cy" values="597.5;587.5;597.5" dur="1.4s" begin="0.4s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Chat Input Area -->
+    <rect x="210" y="760" width="400" height="180" fill="#ffffff"/>
+    <line x1="210" y1="760" x2="590" y2="760" stroke="#e0e0e0" stroke-width="1"/>
+    
+    <!-- Input Field -->
+    <rect x="230" y="780" width="310" height="50" rx="25" fill="#ffffff" stroke="#e6e8f0" stroke-width="1"/>
+    <text x="250" y="810" font-family="Arial, sans-serif" font-size="15" fill="#999">Type your message...</text>
+
+    <!-- Send Button -->
+    <rect x="540" y="785" width="40" height="40" rx="10" fill="#0a0f3d"/>
+    <text x="560" y="813" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle">➤</text>
+
+    <!-- Footer Text -->
+    <rect x="210" y="830" width="380" height="60" rx="20" fill="#ffffff" stroke="#e6e8f0" stroke-width="1"/>
+    <rect x="210" y="850" width="380" height="20" fill="#ffffff" stroke="#e6e8f0" stroke-width="1"/>
+    <text x="400" y="870" font-family="Arial, sans-serif" font-size="13" fill="#666" text-anchor="middle">Conversations powered by Zaakiy AI</text>
+  </g>
+  
+  <!-- Floating Message 1 (Top Left) -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="120" width="180" height="80" rx="15" fill="url(#glassOverlaySmall)" stroke="url(#glassStrokeSmall)" stroke-width="1">
+      <animate attributeName="y" values="100;90;100" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <text x="140" y="135" font-family="Arial, sans-serif" font-size="16" fill="#333" text-anchor="middle">
+      <animate attributeName="y" values="135;125;135" dur="3s" repeatCount="indefinite"/>
+      ✨ 24/7 automated
+    </text>
+    <text x="140" y="155" font-family="Arial, sans-serif" font-size="16" fill="#333" text-anchor="middle">
+      <animate attributeName="y" values="155;145;155" dur="3s" repeatCount="indefinite"/>
+      support
+    </text>
+  </g>
+  
+  <!-- Floating Message 2 (Top Right) -->
+  <g filter="url(#shadow)">
+    <rect x="620" y="250" width="170" height="55" rx="15" fill="url(#glassOverlayDark)" stroke="url(#glassStrokeDark)" stroke-width="1">
+      <animate attributeName="y" values="250;240;250" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </rect>
+    <text x="705" y="285" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">
+      <animate attributeName="y" values="285;275;285" dur="3s" begin="1s" repeatCount="indefinite"/>
+      💬 Instant responses
+    </text>
+  </g>
+  
+  <!-- Floating Message 3 (Bottom Left) -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="650" width="160" height="55" rx="15" fill="url(#glassOverlaySmall)" stroke="url(#glassStrokeSmall)" stroke-width="1">
+      <animate attributeName="y" values="650;640;650" dur="3s" begin="2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="120" y="685" font-family="Arial, sans-serif" font-size="16" fill="#333" text-anchor="middle">
+      <animate attributeName="y" values="685;675;685" dur="3s" begin="2s" repeatCount="indefinite"/>
+      🚀 Deploy in minutes
+    </text>
+  </g>
+  
+  <!-- Floating Message 4 (Bottom Right) -->
+  <g filter="url(#shadow)">
+    <rect x="610" y="700" width="180" height="55" rx="15" fill="url(#glassOverlaySmall)" stroke="url(#glassStrokeSmall)" stroke-width="1">
+      <animate attributeName="y" values="700;690;700" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="700" y="735" font-family="Arial, sans-serif" font-size="16" fill="#333" text-anchor="middle">
+      <animate attributeName="y" values="735;725;735" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+      📊 Smart analytics
+    </text>
+  </g>
+</svg>
