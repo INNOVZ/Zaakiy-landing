@@ -123,7 +123,7 @@ export default function PricingCard() {
             className={`flex flex-col p-6 sm:p-12 rounded-lg border ${
               plan.highlighted
                 ? "border-[#0a0a60] shadow-lg relative overflow-hidden"
-                : "border-gray-200 "
+                : "border-gray-200 shadow-lg"
             }`}
           >
             {plan.highlighted && (

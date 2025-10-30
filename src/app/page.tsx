@@ -6,7 +6,8 @@ import shopify from "../../public/shopify.png";
 import webflow from "../../public/webflow.png";
 import PriceSection from "@/components/PricingCard";
 import logo from "../../public/zaakiy.svg";
-import keplero from "../../public/keps.png";
+import image from "../../public/imag.svg";
+import workflow from "../../public/workflows.svg";
 
 export default function Home() {
   return (
@@ -16,8 +17,8 @@ export default function Home() {
           <div className="flex flex-col items-start">
             <h1 className="text-4xl sm:text-6xl mt-5">Meet Zaakiy</h1>
             <p className="mt-5 text-base">
-              Our very first AI enabled virtual assistant and AI customer
-              support chatbot for your business
+              Our very first AI enabled virtual assistant and Intelligent
+              customer support chatbot for your business
             </p>
             <button className="mt-8 hidden pointer bg-[#0a0a60] font-semibold md:flex items-center space-x-4 text-white hover:text-[#3fe4aa] duration-300 transition-colors px-5 py-3 rounded-lg gap-3">
               Try it now !
@@ -59,13 +60,19 @@ export default function Home() {
             </span>
           </div>
         </div>
-
-        <div className="mt-24 container mx-auto flex flex-col items-center">
+        <Image
+          src={workflow}
+          alt="workflow"
+          width={120}
+          height={150}
+          className="mt-15 w-full h-auto rounded-3xl"
+        />
+        <div className="mt-24 container mx-auto">
           <h1 className="text-3xl sm:text-4xl text-center font-bold text-[#0a0a60]">
             The future of customer support
           </h1>
-          <div className="mt-15 grid grid-cols-1 sm:grid-cols-2 gap-5">
-            <div className="py-10 flex flex-col gap-2 px-10">
+          <div className="mt-15 grid grid-cols-1 sm:grid-cols-2">
+            <div className="py-10 flex flex-col gap-2 px-5 sm:px-0">
               <p className="text-xl font-medium pb-3 bg-gradient-to-r from-[#5D7DDE] to-[#6a8fff] text-transparent bg-clip-text">
                 Optimize Customer Xperience
               </p>
@@ -123,19 +130,19 @@ export default function Home() {
               </ul>
               <div className="btn text-lg font-bold">Try it now</div>
             </div>
-            <div className="gap-5 flex justify-center items-center">
+            <div className="flex justify-center items-center">
               <Image
-                src={keplero}
+                src={image}
                 alt="bot"
                 width={100}
                 height={100}
-                className="w-[80vw] h-auto"
+                className="w-full sm:w-3/4 h-auto"
               />
             </div>
           </div>
         </div>
         <div className="mt-15  grid grid-cols-3 gap-5 bg-[#0a0a60] rounded-4xl">
-          <div className="py-10 gap-2 p-10 sm:px-34 text-center hover:glass-b pointer">
+          <div className="py-10 gap-2 sm:px-34 text-center hover:glass-b pointer">
             <div className="text-3xl sm:text-5xl font-bold text-[#ffffff]">
               +80%
             </div>
@@ -163,7 +170,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="mt-24 flex flex-col items-center gap-2 px-10 sm:px-34">
+        <div className="bg-[#f9fafb] mt-24 py-15 flex flex-col items-center gap-2 px-10 rounded-3xl">
           <PriceSection />
         </div>
         <div className="mt-24 flex flex-col items-center gap-2 px-10 sm:px-34">

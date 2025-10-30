@@ -15,10 +15,13 @@ export const metadata: Metadata = {
   title: "Zaakiy AI | Upgrade to AI workforce",
   description: "Making the workforce better with AI",
   keywords: [
+    "AI chatbot",
     "AI Agent for Your Business",
     "AI chatbot Agent for 24/7 Customer Support",
     "AI chatbot Agent for 24/7 Customer Support",
     "AI solutions in Dubai",
+    "AI marketing solutions",
+    "AI enabled services",
   ].join(", "),
   authors: [{ name: "Zaakiy AI" }],
   robots: {
@@ -62,7 +65,7 @@ export const metadata: Metadata = {
   },
   other: {
     "geo.region": "IN-KL",
-    "geo.placename": "Trivandrum, Kerala",
+    "geo.placename": "Dubai, UAE",
     "geo.position": "8.5241;76.9366",
     ICBM: "8.5241, 76.9366",
     "business:contact_data:street_address":
