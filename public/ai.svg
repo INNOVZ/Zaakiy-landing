@@ -82,13 +82,16 @@
     <!-- Avatar Circle with Logo -->
     <circle cx="250" cy="190" r="25" fill="none" stroke="#4a5583" stroke-width="2"/>
     <!-- Logo Z inside circle -->
-    <path d="M 243 180 L 257 180 L 243 200 L 257 200" fill="none" stroke="#4a5583" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+     <g transform="translate(460, 600)">
+    
+    <image href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAyNSAyNSI+CiAgPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI5LjguMiwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDIuMS4xIEJ1aWxkIDMpICAtLT4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLnN0MCB7CiAgICAgICAgZmlsbDogI2ZmZjsKICAgICAgfQoKICAgICAgLnN0MSB7CiAgICAgICAgZmlsbDogIzBhMGE2MDsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9InN0MSIgd2lkdGg9IjI1IiBoZWlnaHQ9IjI1Ii8+CiAgPGc+CiAgICA8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNC44NSwxMi4wNWMtLjkzLTEuMTUtMS0yLjkxLS40Ni00LjMsMS4xMy0yLjc3LDQuMTQtNC41MSw2Ljg0LTQuNzgsMy43Ny0uMzcsNy40OSwyLjQ1LDcuNjksNi43My4xNiwyLjQ5LTEuMjMsNC44NC0zLjE1LDYuMDktMS43MywxLjE2LTUuMzMsMi40OC02LjM4LS4yNS0uNjItMS45MSwxLjI2LTMuMTIsMi43OC0zLjE2LjU5LS4wMiwxLjE5LjExLDEuNzQuMzUsMS41MS42NywyLjcyLDIuMTMsMy4xLDMuODYuNDQsMi4wNC0uNzgsNC4xLTIuNDcsNC45LTEuMzEuNjktMy42NSwxLjA2LTQuMTktLjg5LS4zLTEuNDUuODQtMi42NSwyLjEyLTIuNjcsMS4xLS4wOCwyLjE0LjU4LDMuMDEsMS4xNy41OC4zOSwxLjE1Ljc3LDEuNzguOTksMS4yNC40MywyLjczLjAyLDMuNjctMS4wNi0uODUsMS4yLTIuMzksMS43OC0zLjc2LDEuNDItMS4zNC0uMzQtMi40My0xLjQxLTMuNzMtMS43NC0uODYtLjIxLTEuODgtLjA1LTIuMjUuODctLjM2Ljk1LjMsMS41NiwxLjE3LDEuNTEuNTktLjAxLDEuMjItLjI0LDEuNzYtLjUzLDIuNTctMS41LDIuNDItNC40OC4xNC02LjItLjczLS41My0xLjYxLS44My0yLjQ2LS42NC0uNjIuMTMtMS41NS42Mi0xLjI4LDEuMzYuNDgsMS4xMiwxLjk0LjcsMi44OS40MywzLjEyLS45OCw1LjM0LTQuMjIsNC03LjczLS45NC0yLjYtMy42My00LjEtNi4xNC0zLjk2LTIuNDkuMTEtNS4zOCwxLjU5LTYuNTksNC4wNi0uNiwxLjI4LS42NCwyLjk0LjE1LDQuMTRoMFoiLz4KICAgIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xNC4zNyw3LjY1Yy0uOS4xNi0xLjg4LjE5LTIuNTcuODYsMCwwLS4wMi4wMi0uMDIuMDIuMS0uMTEuMDMtLjM0LS4xMi0uMzYuNzctLjA3LDEuODguNDMsMi4yMywxLjM5LS42Ny0uNTUtMS40LS44MS0yLjIxLS43My0uMzYuMDUtLjYtLjQzLS4zNy0uNzIuNzctLjg4LDIuMDktLjg1LDMuMDYtLjQ1aDBaIi8+CiAgICA8ZWxsaXBzZSBjbGFzcz0ic3QwIiBjeD0iOC42OSIgY3k9IjguODQiIHJ4PSIuNjUiIHJ5PSIuOCIvPgogIDwvZz4KPC9zdmc+" x="6" y="6" width="68" height="68" clip-path="url(#badgeCircle)"/>
+  </g>
     
     <!-- Header Text -->
-    <text x="290" y="190" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">Zaakiy AI</text>
+    <text x="290" y="200" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">Zaakiy AI</text>
     
     <!-- Online Status Dot -->
-    <circle cx="399" cy="185" r="5" fill="#21e489ff"/>
+    <circle cx="399" cy="192" r="5" fill="#21e489ff"/>
     
     <!-- Close Button -->
     <circle cx="560" cy="190" r="18" fill="white"/>

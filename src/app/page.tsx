@@ -1,73 +1,77 @@
 import Image from "next/image";
 // import Bot from "../../../public/bot.png";
 import { CircleCheckBig } from "lucide-react";
-import wordpress from "../../public/wordpress.png";
-import shopify from "../../public/shopify.png";
-import webflow from "../../public/webflow.png";
 import PriceSection from "@/components/PricingCard";
 import logo from "../../public/zaakiy.svg";
 import image from "../../public/imag.svg";
 import workflow from "../../public/workflows.svg";
 import chatwindow from "../../public/ai.svg";
-
+import integration from "../../public/animated_orbit.svg";
 export default function Home() {
   return (
     <>
       <div className="mt-1 flex flex-col px-10">
         <div className="container mx-auto min-h-[95vh] grid grid-cols-1 sm:grid-cols-2 mt-25">
           <div className="flex flex-col items-start">
-            <h1 className="text-4xl sm:text-6xl mt-5">Meet Zaakiy</h1>
+            <h1 className="pt-10 text-4xl sm:text-6xl mt-5">Meet Zaakiy</h1>
             <p className="mt-5 text-base">
               Our very first AI enabled virtual assistant and Intelligent
-              customer support chatbot for your business
+              customer support chatbot for your business.
             </p>
-            <button className="mt-8 hidden pointer bg-[#0a0a60] font-semibold md:flex items-center space-x-4 text-white hover:text-[#3fe4aa] duration-300 transition-colors px-5 py-3 rounded-lg gap-3">
+            <button className="mt-8 hidden pointer bg-[#0a0a60] font-semibold md:flex items-center space-x-4 text-white hover:text-[#3fe4aa] duration-300 transition-colors px-5 py-2 rounded-lg gap-3">
               Try it now !
             </button>
           </div>
-          <div className="flex justify-center items-center">
-              <Image
-                src={chatwindow}
-                alt="bot"
-                width={100}
-                height={100}
-                className="w-full sm:w-full h-auto"
+          <div className="flex items-start">
+            <Image
+              src={chatwindow}
+              alt="bot"
+              width={100}
+              height={100}
+              className="w-full sm:w-full h-auto"
             />
           </div>
         </div>
-        <div className="mt-24 text-center">
-          <h1 className="text-3xl sm:text-4xl font-bold text-[#0a0a60]">
-            No Endless conversations
+        <div className="">
+          <h1 className="text-3xl sm:text-5xl text-center font-bold text-[#0a0a60]">
+            Transform your Business
           </h1>
-          <p className="mt-6 text-base font-medium text-gray-600">
-            Responds to your customers queries 24/7 with real information.
-          </p>
-        </div>
-        <div className="container mx-auto mt-15 text-left grid grid-cols-1 sm:grid-cols-2">
-          <div className="py-10 gap-2 flex flex-col px-10 ">
-            <h1 className="text-3xl sm:text-4xl font-bold text-[#0a0a60]">
-              Unleashed Experience
-            </h1>
-            <p className="mt-3 text-base font-medium text-gray-600">
-              Run your business 24/7 with Zentria AI where your customers can
-              get instant answers to their queries.
-            </p>
-          </div>
-
-          <div className="py-10 gap-2 flex flex-col px-10 ">
-            <h1 className="text-3xl sm:text-4xl font-bold text-[#0a0a60]">
-              Integrate seemlessly
-            </h1>
-            <p className="mt-3 text-base font-medium text-gray-600">
-              AI Assistant that responds to your customers on your Website,
-              WhatsApp and Social medias
-            </p>
-
-            <span className="mt-8 flex flex-row justify-start items-start gap-10">
-              <Image src={wordpress} alt="bot" width={50} />
-              <Image src={shopify} alt="bot" width={50} />
-              <Image src={webflow} alt="bot" width={50} />
-            </span>
+          <p className="mt-3 text-base text-center">Integrate Zaakiy AI</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 rounded-3xl">
+            <div className="py-10 flex flex-col justify-center items-center">
+              <Image
+                src={integration}
+                alt="bot"
+                width={520}
+                height={520}
+                className="h-auto"
+              />
+              <p className="text-base text-[#0a0a60]">
+                Connect with the tools your business already loves.
+              </p>
+            </div>
+            <div className="py-10 flex flex-col justify-center">
+              <h1 className="mt-8 text-xl sm:text-2xl font-bold text-[#0a0a60]">
+                No Endless conversations
+              </h1>
+              <p className="mt-3  text-base font-medium text-gray-600">
+                Responds to your customers queries with real information.
+              </p>
+              <h1 className="mt-8 text-3xl sm:text-3xl font-bold text-[#0a0a60]">
+                Unleashed Experience
+              </h1>
+              <p className="mt-3 text-base font-medium text-gray-600">
+                Run your business 24/7 with Zaakiy AI where your customers can
+                get instant answers to their queries.
+              </p>
+              <h1 className="mt-8 text-3xl sm:text-4xl font-bold text-[#0a0a60]">
+                Integrate seemlessly
+              </h1>
+              <p className="mt-3 text-base font-medium text-gray-600">
+                AI Assistant that responds to your customers on your Website,
+                WhatsApp and Social medias
+              </p>
+            </div>
           </div>
         </div>
         <Image
@@ -77,8 +81,35 @@ export default function Home() {
           height={150}
           className="mt-15 w-full h-auto rounded-3xl"
         />
+        <div className="container mx-auto mt-24 grid grid-cols-3 gap-10">
+          <div className="bg-[#1a2438] p-5 rounded-2xl flex items-end justify-between">
+            <div className="text-3xl sm:text-6xl font-bold text-white">
+              +80%
+            </div>
+            <p></p>
+            <p className="text-lg font-medium text-white">Conversion Rate</p>
+          </div>
+          <div className="bg-[#1a2438] p-5 rounded-2xl flex items-end justify-between">
+            <div className="text-3xl sm:text-6xl font-bold text-white">
+              +65%
+            </div>
+            <p></p>
+            <p className="mt-8 text-base font-medium text-white">
+              Customer Support Resources Saved
+            </p>
+          </div>
+          <div className="bg-[#1a2438] p-5 rounded-2xl flex items-end justify-between">
+            <div className="text-3xl sm:text-6xl font-bold text-white">
+              +90%
+            </div>
+            <p></p>
+            <p className="mt-8 text-base font-medium text-white">
+              Customer Satisfaction Score
+            </p>
+          </div>
+        </div>
         <div className="mt-24 container mx-auto">
-          <h1 className="text-3xl sm:text-4xl text-center font-bold text-[#0a0a60]">
+          <h1 className="text-3xl sm:text-5xl text-center font-bold text-[#0a0a60]">
             The future of customer support
           </h1>
           <div className="mt-15 grid grid-cols-1 sm:grid-cols-2">
@@ -151,35 +182,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mt-15  grid grid-cols-3 gap-5 bg-[#0a0a60] rounded-4xl">
-          <div className="py-10 gap-2 sm:px-34 text-center hover:glass-b pointer">
-            <div className="text-3xl sm:text-5xl font-bold text-[#ffffff]">
-              +80%
-            </div>
-            <p></p>
-            <p className="mt-8 text-lg font-medium text-[#3fe4aa]">
-              Conversion Rate
-            </p>
-          </div>
-          <div className="py-10 gap-2 p-10 sm:px-34 text-center">
-            <div className="text-3xl sm:text-5xl font-bold text-[#ffffff]">
-              +65%
-            </div>
-            <p></p>
-            <p className="mt-8 text-base font-medium text-[#3fe4aa]">
-              Customer Support Resources Saved
-            </p>
-          </div>
-          <div className="py-10 gap-2 p-10 sm:px-34 text-center">
-            <div className="text-3xl sm:text-5xl font-bold text-[#ffffff]">
-              +90%
-            </div>
-            <p></p>
-            <p className="mt-8 text-base font-medium text-[#3fe4aa]">
-              Customer Satisfaction Score
-            </p>
-          </div>
-        </div>
+
         <div className="bg-[#f9fafb] mt-24 py-15 flex flex-col items-center gap-2 px-10 rounded-3xl">
           <PriceSection />
         </div>

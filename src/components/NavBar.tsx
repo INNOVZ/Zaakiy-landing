@@ -59,8 +59,8 @@ const Navbar = () => {
           </div>
 
           <Link href="/auth/login">
-            <button className="hidden pointer bg-[#0a0a60] font-normal md:flex items-center space-x-4 text-white duration-300 transition-colors px-4 py-3 rounded-lg gap-3">
-              Log in
+            <button className="hidden pointer bg-[#0a0a60] font-normal md:flex items-center space-x-4 text-white duration-300 transition-colors px-4 py-2 rounded-lg gap-3">
+              Book a Demo
               <LogIn size={20} />
             </button>
           </Link>
