@@ -52,7 +52,7 @@ export default function Home() {
                 Connect with the tools your business already loves.
               </p>
             </div>
-            <div className="py-10 flex flex-col justify-center">
+            <div className="py-10 sm:pr-20 flex flex-col justify-center">
               <h1 className="mt-8 text-xl sm:text-xl font-bold text-[#0a0a60]">
                 No Endless conversations
               </h1>
@@ -83,7 +83,7 @@ export default function Home() {
           height={150}
           className="mt-15 w-full h-auto rounded-3xl"
         />
-        <div className="container mx-auto mt-24 grid grid-cols-1 sm:grid-cols-3 gap-10">
+        <div className="container mx-auto mt-24 grid grid-cols-1 sm:grid-cols-3 gap-3">
           <div className="bg-[#1a2438] p-5 rounded-2xl flex items-end justify-between gap-10">
             <div className="text-3xl sm:text-6xl font-bold text-white">
               +80%
@@ -91,7 +91,7 @@ export default function Home() {
             <p></p>
             <p className="text-lg font-medium text-white">Conversion Rate</p>
           </div>
-          <div className="bg-[#1a2438] p-5 rounded-2xl flex items-end justify-between gap-10">
+          <div className="bg-[#1a2438] p-5 rounded-2xl flex items-end justify-between gap-3">
             <div className="text-3xl sm:text-6xl font-bold text-white">
               +65%
             </div>
@@ -100,7 +100,7 @@ export default function Home() {
               Customer Support Resources Saved
             </p>
           </div>
-          <div className="bg-[#1a2438] p-5 rounded-2xl flex items-end justify-between gap-10">
+          <div className="bg-[#1a2438] p-5 rounded-2xl flex items-end justify-between gap-3">
             <div className="text-3xl sm:text-6xl font-bold text-white">
               +90%
             </div>
