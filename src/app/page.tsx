@@ -10,7 +10,7 @@ import integration from "../../public/animated_orbit.svg";
 export default function Home() {
   return (
     <>
-      <div className="mt-1 flex flex-col px-10">
+      <div className="mt-1 flex flex-col px-5 sm:px-16">
         <div className="container mx-auto min-h-[95vh] grid grid-cols-1 sm:grid-cols-2 mt-15">
           <div className="flex flex-col items-start">
             <h1 className="pt-10 text-4xl sm:text-6xl mt-5">Meet Zaakiy</h1>
@@ -32,7 +32,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="bg-stone-100 py-15 flex flex-col items-center px-10 rounded-3xl">
+        <div className="bg-indigo-50 py-15 flex flex-col items-center px-10 rounded-3xl">
           <h1 className="text-3xl sm:text-4xl text-center font-bold text-[#0a0a60]">
             Transform your Business
           </h1>
@@ -48,11 +48,11 @@ export default function Home() {
                 height={520}
                 className="h-auto"
               />
-              <p className="text-base font-medium text-gray-600">
+              <p className="text-base text-center font-medium text-gray-600">
                 Connect with the tools your business already loves.
               </p>
             </div>
-            <div className="py-10 sm:pr-20 flex flex-col justify-center">
+            <div className="sm:pr-20 flex flex-col justify-center">
               <h1 className="mt-8 text-xl sm:text-2xl font-bold text-[#0a0a60]">
                 No Endless conversations
               </h1>
@@ -76,7 +76,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-[#f1f5f9] mt-24 py-15 flex flex-col items-center gap-2 px-10 rounded-3xl">
+        <div className="bg-blue-50 mt-24 py-15 flex flex-col items-center gap-2 px-10 rounded-3xl">
           <h1 className="text-3xl sm:text-4xl text-center font-bold text-[#0a0a60]">
             Learn from your Data
           </h1>
@@ -192,7 +192,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-[#f9fafb] mt-24 py-15 flex flex-col items-center gap-2 px-10 rounded-3xl">
+        <div className="bg-[#f9fafb] mt-24 py-15 flex flex-col items-center gap-2 rounded-3xl">
           <PriceSection />
         </div>
         <div className="mt-24 flex flex-col items-center gap-2 px-10 sm:px-34">
