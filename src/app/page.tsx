@@ -36,7 +36,7 @@ export default function Home() {
           <h1 className="text-3xl sm:text-4xl text-center font-bold text-[#0a0a60]">
             Transform your Business
           </h1>
-          <p className="mt-3 text-base font-medium text-gray-600">
+          <p className="mt-3 text-base text-center font-medium text-gray-600">
             Integrate Zaakiy AI
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 rounded-3xl">
@@ -83,15 +83,15 @@ export default function Home() {
           height={150}
           className="mt-15 w-full h-auto rounded-3xl"
         />
-        <div className="container mx-auto mt-24 grid grid-cols-3 gap-10">
-          <div className="bg-[#1a2438] p-5 rounded-2xl flex items-end justify-between">
+        <div className="container mx-auto mt-24 grid grid-cols-1 sm:grid-cols-3 gap-10">
+          <div className="bg-[#1a2438] p-5 rounded-2xl flex items-end justify-between gap-10">
             <div className="text-3xl sm:text-6xl font-bold text-white">
               +80%
             </div>
             <p></p>
             <p className="text-lg font-medium text-white">Conversion Rate</p>
           </div>
-          <div className="bg-[#1a2438] p-5 rounded-2xl flex items-end justify-between">
+          <div className="bg-[#1a2438] p-5 rounded-2xl flex items-end justify-between gap-10">
             <div className="text-3xl sm:text-6xl font-bold text-white">
               +65%
             </div>
@@ -100,7 +100,7 @@ export default function Home() {
               Customer Support Resources Saved
             </p>
           </div>
-          <div className="bg-[#1a2438] p-5 rounded-2xl flex items-end justify-between">
+          <div className="bg-[#1a2438] p-5 rounded-2xl flex items-end justify-between gap-10">
             <div className="text-3xl sm:text-6xl font-bold text-white">
               +90%
             </div>
@@ -111,7 +111,7 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-24 container mx-auto">
-          <h1 className="text-3xl sm:text-5xl text-center font-bold text-[#0a0a60]">
+          <h1 className="text-3xl sm:text-4xl text-center font-bold text-[#0a0a60]">
             The future of customer support
           </h1>
           <div className="mt-15 grid grid-cols-1 sm:grid-cols-2">
