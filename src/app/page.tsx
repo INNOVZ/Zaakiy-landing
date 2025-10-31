@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <div className="mt-1 flex flex-col px-10">
-        <div className="container mx-auto min-h-[95vh] grid grid-cols-1 sm:grid-cols-2 mt-25">
+        <div className="container mx-auto min-h-[95vh] grid grid-cols-1 sm:grid-cols-2 mt-15">
           <div className="flex flex-col items-start">
             <h1 className="pt-10 text-4xl sm:text-6xl mt-5">Meet Zaakiy</h1>
             <p className="mt-5 text-base">
@@ -36,7 +36,9 @@ export default function Home() {
           <h1 className="text-3xl sm:text-4xl text-center font-bold text-[#0a0a60]">
             Transform your Business
           </h1>
-          <p className="mt-3 text-base text-center">Integrate Zaakiy AI</p>
+          <p className="mt-3 text-base font-medium text-gray-600">
+            Integrate Zaakiy AI
+          </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 rounded-3xl">
             <div className="py-10 flex flex-col justify-center items-center">
               <Image
@@ -46,7 +48,7 @@ export default function Home() {
                 height={520}
                 className="h-auto"
               />
-              <p className="text-base text-[#0a0a60]">
+              <p className="text-base font-medium text-gray-600">
                 Connect with the tools your business already loves.
               </p>
             </div>
@@ -54,20 +56,20 @@ export default function Home() {
               <h1 className="mt-8 text-xl sm:text-xl font-bold text-[#0a0a60]">
                 No Endless conversations
               </h1>
-              <p className="mt-3  text-base text-gray-600">
+              <p className="mt-3 text-base font-medium text-gray-600">
                 Responds to your customers queries with real information.
               </p>
               <h1 className="mt-8 text-3xl sm:text-2xl font-bold text-[#0a0a60]">
                 Unleashed Experience
               </h1>
-              <p className="mt-3 text-base text-gray-600">
+              <p className="mt-3 text-base font-medium text-gray-600">
                 Run your business 24/7 with Zaakiy AI where your customers can
                 get instant answers to their queries.
               </p>
               <h1 className="mt-8 text-3xl sm:text-3xl font-bold text-[#0a0a60]">
                 Integrate seemlessly
               </h1>
-              <p className="mt-3 text-base text-gray-600">
+              <p className="mt-3 text-base font-medium text-gray-600">
                 AI Assistant that responds to your customers on your Website,
                 WhatsApp and Social medias
               </p>
