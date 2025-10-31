@@ -76,36 +76,44 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Image
-          src={workflow}
-          alt="workflow"
-          width={120}
-          height={150}
-          className="mt-15 w-full h-auto rounded-3xl"
-        />
+        <div className="bg-[#f1f5f9] mt-24 py-15 flex flex-col items-center gap-2 px-10 rounded-3xl">
+          <h1 className="text-3xl sm:text-4xl text-center font-bold text-[#0a0a60]">
+            Learn from your Data
+          </h1>
+          <p className="text-base font-medium text-gray-600">
+            Connect your knowledge base and let Zaakiy AI handle the rest.
+          </p>
+          <Image
+            src={workflow}
+            alt="workflow"
+            width={120}
+            height={150}
+            className="w-full h-auto rounded-3xl"
+          />
+        </div>
         <div className="container mx-auto mt-24 grid grid-cols-1 sm:grid-cols-3 gap-3">
           <div className="bg-[#1a2438] p-5 rounded-2xl flex items-end justify-between gap-10">
-            <div className="text-3xl sm:text-6xl font-bold text-white">
+            <div className="text-3xl sm:text-5xl font-bold text-white">
               +80%
             </div>
             <p></p>
-            <p className="text-lg font-medium text-white">Conversion Rate</p>
+            <p className="text-base font-medium text-white">Conversion Rate</p>
           </div>
           <div className="bg-[#1a2438] p-5 rounded-2xl flex items-end justify-between gap-3">
-            <div className="text-3xl sm:text-6xl font-bold text-white">
+            <div className="text-3xl sm:text-5xl font-bold text-white">
               +65%
             </div>
             <p></p>
-            <p className="mt-8 text-base font-medium text-white">
+            <p className="text-base font-medium text-white">
               Customer Support Resources Saved
             </p>
           </div>
           <div className="bg-[#1a2438] p-5 rounded-2xl flex items-end justify-between gap-3">
-            <div className="text-3xl sm:text-6xl font-bold text-white">
+            <div className="text-3xl sm:text-5xl font-bold text-white">
               +90%
             </div>
             <p></p>
-            <p className="mt-8 text-base font-medium text-white">
+            <p className="text-base font-medium text-white">
               Customer Satisfaction Score
             </p>
           </div>
@@ -184,7 +192,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
         <div className="bg-[#f9fafb] mt-24 py-15 flex flex-col items-center gap-2 px-10 rounded-3xl">
           <PriceSection />
         </div>
@@ -197,7 +204,6 @@ export default function Home() {
           </p>
           <div className="btn text-bold mt-3">Chat with us !</div>
         </div>
-
         <div className="mt-15 py-10 grid grid-cols-1 sm:grid-cols-3 items-center gap-2 px-10 sm:px-34 bg-[#0a0a60] rounded-4xl">
           <div className="mt-12 gap-5 h-[100%]">
             <Image src={logo} alt="logo" width={150} height={150} />
