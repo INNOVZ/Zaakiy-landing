@@ -40,6 +40,10 @@ h6 {
   font-weight: 700;
 }
 
+p {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+}
 
 .btn {
   cursor: pointer;
