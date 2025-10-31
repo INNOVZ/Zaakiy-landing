@@ -14,7 +14,7 @@ export default function Home() {
         <div className="container mx-auto min-h-[95vh] grid grid-cols-1 sm:grid-cols-2 mt-15">
           <div className="flex flex-col items-start">
             <h1 className="pt-10 text-4xl sm:text-6xl mt-5">Meet Zaakiy</h1>
-            <p className="mt-5 text-base">
+            <p className="mt-5 text-base font-normal">
               Our very first AI enabled virtual assistant and Intelligent
               customer support chatbot for your business.
             </p>
@@ -36,7 +36,7 @@ export default function Home() {
           <h1 className="text-3xl sm:text-4xl text-center font-bold text-[#0a0a60]">
             Transform your Business
           </h1>
-          <p className="mt-3 text-base text-center font-medium text-gray-600">
+          <p className="mt-3 text-base text-center font-normal text-gray-600">
             Integrate Zaakiy AI
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 rounded-3xl">
@@ -56,7 +56,7 @@ export default function Home() {
               <h1 className="mt-8 text-xl sm:text-2xl font-bold text-[#0a0a60]">
                 No Endless conversations
               </h1>
-              <p className="mt-3 text-base font-medium text-gray-600">
+              <p className="mt-3 text-base font-normal text-gray-600">
                 Responds to your customers queries with real information
                 instantly and automatically without the need for manual
                 intervention.
@@ -64,18 +64,18 @@ export default function Home() {
               <h1 className="mt-8 text-xl sm:text-2xl font-bold text-[#0a0a60]">
                 Unleashed Experience
               </h1>
-              <p className="mt-3 text-base font-medium text-gray-600">
+              <p className="mt-3 text-base font-normal text-gray-600">
                 Run your business 24/7 with Zaakiy AI where your customers can
-                get instant answers to their queries. Zaakiy AI optimizes your business
-                opportunities with advanced artificial intelligence, ensuring
-                efficiency and responsiveness in your industry.
+                get instant answers to their queries. Zaakiy AI optimizes your
+                business opportunities with advanced artificial intelligence,
+                ensuring efficiency and responsiveness in your industry.
               </p>
               <h1 className="mt-8 text-xl sm:text-2xl font-bold text-[#0a0a60]">
                 Integrate seemlessly
               </h1>
-              <p className="mt-3 text-base font-medium text-gray-600">
-                Omnichannel AI Assistant that responds to your customers on your Website,
-                WhatsApp and Social medias and 
+              <p className="mt-3 text-base font-normal text-gray-600">
+                Omnichannel AI Assistant that responds to your customers on your
+                Website, WhatsApp and Social medias and
               </p>
             </div>
           </div>
@@ -84,7 +84,7 @@ export default function Home() {
           <h1 className="text-3xl sm:text-4xl text-center font-bold text-[#0a0a60]">
             Learn from your Data
           </h1>
-          <p className="text-base font-medium text-gray-600">
+          <p className="text-base font-normal text-gray-600">
             Connect your knowledge base and let Zaakiy AI handle the rest.
           </p>
           <Image
@@ -134,7 +134,7 @@ export default function Home() {
               <h1 className="text-2xl sm:text-3xl text-left font-bold text-gray-800 ">
                 Interact with every new opportunity
               </h1>
-              <p className="mt-3 text-base font-medium text-gray-600">
+              <p className="mt-3 text-base font-normal text-gray-600">
                 ZaaKy AI optimizes your business opportunities with advanced
                 artificial intelligence.
               </p>
@@ -142,7 +142,7 @@ export default function Home() {
                 <li className="py-3">
                   <span className="flex flex-row items-center gap-9">
                     <CircleCheckBig color="#5D7DDE" />
-                    <p className="text-base font-medium text-gray-600">
+                    <p className="text-base font-normal text-gray-600">
                       Automate customer interactions
                     </p>
                   </span>
@@ -150,7 +150,7 @@ export default function Home() {
                 <li className="py-3">
                   <span className="flex flex-row items-center gap-9">
                     <CircleCheckBig color="#5D7DDE" />
-                    <p className="text-base font-medium text-gray-600">
+                    <p className="text-base font-normal text-gray-600">
                       24/7 continuous support
                     </p>
                   </span>
@@ -158,7 +158,7 @@ export default function Home() {
                 <li className="py-3">
                   <span className="flex flex-row items-center gap-9">
                     <CircleCheckBig color="#5D7DDE" />
-                    <p className="text-base font-medium text-gray-600">
+                    <p className="text-base font-normal text-gray-600">
                       Communicate your information accurately
                     </p>
                   </span>
@@ -168,7 +168,7 @@ export default function Home() {
                   <span className="flex flex-row items-center gap-9">
                     <CircleCheckBig color="#5D7DDE" />
 
-                    <p className="text-base font-medium text-gray-600">
+                    <p className="text-base font-normal text-gray-600">
                       Eliminate the waiting time
                     </p>
                   </span>
@@ -177,7 +177,7 @@ export default function Home() {
                   <span className="flex flex-row items-center gap-9">
                     <CircleCheckBig color="#5D7DDE" />
 
-                    <p className="text-base font-medium text-gray-600">
+                    <p className="text-base font-normal text-gray-600">
                       Multilingual Support
                     </p>
                   </span>
