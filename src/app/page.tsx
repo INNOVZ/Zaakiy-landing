@@ -57,21 +57,25 @@ export default function Home() {
                 No Endless conversations
               </h1>
               <p className="mt-3 text-base font-medium text-gray-600">
-                Responds to your customers queries with real information.
+                Responds to your customers queries with real information
+                instantly and automatically without the need for manual
+                intervention.
               </p>
               <h1 className="mt-8 text-xl sm:text-2xl font-bold text-[#0a0a60]">
                 Unleashed Experience
               </h1>
               <p className="mt-3 text-base font-medium text-gray-600">
                 Run your business 24/7 with Zaakiy AI where your customers can
-                get instant answers to their queries.
+                get instant answers to their queries. Zaakiy AI optimizes your business
+                opportunities with advanced artificial intelligence, ensuring
+                efficiency and responsiveness in your industry.
               </p>
               <h1 className="mt-8 text-xl sm:text-2xl font-bold text-[#0a0a60]">
                 Integrate seemlessly
               </h1>
               <p className="mt-3 text-base font-medium text-gray-600">
-                AI Assistant that responds to your customers on your Website,
-                WhatsApp and Social medias
+                Omnichannel AI Assistant that responds to your customers on your Website,
+                WhatsApp and Social medias and 
               </p>
             </div>
           </div>
@@ -124,7 +128,7 @@ export default function Home() {
           </h1>
           <div className="mt-15 grid grid-cols-1 sm:grid-cols-2">
             <div className="py-10 flex flex-col gap-2 px-5 sm:px-0">
-              <p className="text-xl font-medium pb-3 bg-gradient-to-r from-[#5D7DDE] to-[#6a8fff] text-transparent bg-clip-text">
+              <p className="text-base font-medium pb-3 bg-gradient-to-r from-[#5D7DDE] to-[#6a8fff] text-transparent bg-clip-text">
                 Optimize Customer Xperience
               </p>
               <h1 className="text-2xl sm:text-3xl text-left font-bold text-gray-800 ">
