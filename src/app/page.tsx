@@ -33,7 +33,7 @@ export default function Home() {
           </div>
         </div>
         <div className="">
-          <h1 className="text-3xl sm:text-5xl text-center font-bold text-[#0a0a60]">
+          <h1 className="text-3xl sm:text-4xl text-center font-bold text-[#0a0a60]">
             Transform your Business
           </h1>
           <p className="mt-3 text-base text-center">Integrate Zaakiy AI</p>
@@ -51,23 +51,23 @@ export default function Home() {
               </p>
             </div>
             <div className="py-10 flex flex-col justify-center">
-              <h1 className="mt-8 text-xl sm:text-2xl font-bold text-[#0a0a60]">
+              <h1 className="mt-8 text-xl sm:text-xl font-bold text-[#0a0a60]">
                 No Endless conversations
               </h1>
-              <p className="mt-3  text-base font-medium text-gray-600">
+              <p className="mt-3  text-base text-gray-600">
                 Responds to your customers queries with real information.
               </p>
-              <h1 className="mt-8 text-3xl sm:text-3xl font-bold text-[#0a0a60]">
+              <h1 className="mt-8 text-3xl sm:text-2xl font-bold text-[#0a0a60]">
                 Unleashed Experience
               </h1>
-              <p className="mt-3 text-base font-medium text-gray-600">
+              <p className="mt-3 text-base text-gray-600">
                 Run your business 24/7 with Zaakiy AI where your customers can
                 get instant answers to their queries.
               </p>
-              <h1 className="mt-8 text-3xl sm:text-4xl font-bold text-[#0a0a60]">
+              <h1 className="mt-8 text-3xl sm:text-3xl font-bold text-[#0a0a60]">
                 Integrate seemlessly
               </h1>
-              <p className="mt-3 text-base font-medium text-gray-600">
+              <p className="mt-3 text-base text-gray-600">
                 AI Assistant that responds to your customers on your Website,
                 WhatsApp and Social medias
               </p>
@@ -117,7 +117,7 @@ export default function Home() {
               <p className="text-xl font-medium pb-3 bg-gradient-to-r from-[#5D7DDE] to-[#6a8fff] text-transparent bg-clip-text">
                 Optimize Customer Xperience
               </p>
-              <h1 className="text-2xl sm:text-4xl text-left font-bold text-gray-800 ">
+              <h1 className="text-2xl sm:text-3xl text-left font-bold text-gray-800 ">
                 Interact with every new opportunity
               </h1>
               <p className="mt-3 text-base font-medium text-gray-600">
