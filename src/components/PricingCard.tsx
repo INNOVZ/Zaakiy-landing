@@ -33,8 +33,8 @@ export default function PricingCard() {
       name: "Pro",
       description: "Perfect for growing teams and businesses",
       price: {
-        monthly: "AED 100.00",
-        yearly: "AED 1062.00",
+        monthly: "$100.00",
+        yearly: "$1062.00",
       },
       features: [
         { name: "5000 Messages", included: true },

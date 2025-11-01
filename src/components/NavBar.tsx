@@ -44,17 +44,10 @@ const Navbar = () => {
             </Link>
             <MegaMenu />
             <Link
-              href="/products"
+              href="/#pricing"
               className="py-1 font-medium border-b-2 border-transparent hover:text-border-b hover:border-b-2 hover:border-[#0a0a60] duration-300 transition-colors"
             >
               Pricing
-            </Link>
-
-            <Link
-              href="/about"
-              className="py-1 font-medium border-b-2 border-transparent hover:text-border-b hover:border-b-2 hover:border-[#0a0a60] duration-300 transition-colors"
-            >
-              About Us
             </Link>
           </div>
 
@@ -63,7 +56,7 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="hidden pointer text-base bg-[#0a0a60] font-normal md:flex items-center space-x-4 text-white duration-300 transition-colors px-4 py-2 rounded-lg gap-3">
+            <button className="hidden pointer text-[14px] bg-[#0a0a60] font-normal md:flex items-center space-x-4 text-white duration-300 transition-colors px-4 py-2 rounded-lg gap-3">
               Book a Demo
               <LogIn size={20} />
             </button>
@@ -117,10 +110,10 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            href="/products"
+            href="/#pricing"
             className="block px-3 py-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-50"
           >
-            Products
+            Pricing
           </Link>
           <Link
             href="/categories"

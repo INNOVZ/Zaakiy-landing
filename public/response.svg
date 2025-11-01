@@ -1,0 +1,100 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="botGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="1" />
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="1" />
+    </linearGradient>
+    
+    <filter id="glowEffect">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="900" height="700" fill="transparent"/>
+  
+  <!-- <text x="400" y="60" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#2d3748" text-anchor="middle">No Endless Conversations</text> -->
+  
+  <!-- <text x="400" y="95" font-family="Arial, sans-serif" font-size="14" fill="#718096" text-anchor="middle">Responds to your customers queries with real information instantly</text> -->
+  <!-- <text x="400" y="115" font-family="Arial, sans-serif" font-size="14" fill="#718096" text-anchor="middle">and automatically without the need for manual intervention.</text> -->
+  
+  <rect x="50" y="160" width="300" height="380" rx="15" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <text x="200" y="195" font-family="Arial, sans-serif" font-size="16" font-weight="semi-bold" fill="#5D7DDE" text-anchor="middle">Before: Endless Back and Forth</text>
+  
+  <rect x="80" y="220" width="180" height="35" rx="8" fill="#FEF3C7" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.9;0.7" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  <text x="170" y="242" font-family="Arial, sans-serif" font-size="12" fill="#92400E" text-anchor="middle">Customer Question 1...</text>
+  
+  <rect x="110" y="265" width="160" height="35" rx="8" fill="#E0E7FF" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.9;0.7" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+  </rect>
+  <text x="190" y="287" font-family="Arial, sans-serif" font-size="12" fill="#0a0a60" text-anchor="middle">Manual Response...</text>
+  
+  <rect x="80" y="310" width="180" height="35" rx="8" fill="#FEF3C7" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.9;0.7" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+  </rect>
+  <text x="170" y="332" font-family="Arial, sans-serif" font-size="12" fill="#92400E" text-anchor="middle">Follow-up Question 2...</text>
+  
+  <rect x="110" y="355" width="160" height="35" rx="8" fill="#E0E7FF" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.9;0.7" dur="2s" begin="0.9s" repeatCount="indefinite"/>
+  </rect>
+  <text x="190" y="377" font-family="Arial, sans-serif" font-size="12" fill="#0a0a60" text-anchor="middle">Waiting for agent...</text>
+  
+  <rect x="80" y="400" width="180" height="35" rx="8" fill="#FEF3C7" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.9;0.7" dur="2s" begin="1.2s" repeatCount="indefinite"/>
+  </rect>
+  <text x="170" y="422" font-family="Arial, sans-serif" font-size="12" fill="#92400E" text-anchor="middle">More questions...</text>
+  
+  <circle cx="200" cy="470" r="25" fill="none" stroke="#5D7DDE" stroke-width="3" stroke-dasharray="80 80" opacity="0.5">
+    <animateTransform attributeName="transform" type="rotate" from="0 200 470" to="360 200 470" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <text x="200" y="515" font-family="Arial, sans-serif" font-size="13" fill="#5D7DDE" text-anchor="middle" font-weight="bold">Endless Loop...</text>
+  
+  <line x1="370" y1="350" x2="420" y2="350" stroke="#4a5568" stroke-width="3"/>
+  <polygon points="420,350 410,345 410,355" fill="#4a5568">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite"/>
+  </polygon>
+  
+  <rect x="450" y="160" width="300" height="380" rx="15" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <text x="600" y="195" font-family="Arial, sans-serif" font-size="16" font-weight="semi-bold" fill="#0a0a60" text-anchor="middle">Now: Instant and Automated</text>
+  
+  <circle cx="600" cy="260" r="40" fill="url(#botGrad)" filter="url(#glowEffect)">
+    <animate attributeName="r" values="40;42;40" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="590" cy="255" r="4" fill="white"/>
+  <circle cx="610" cy="255" r="4" fill="white"/>
+  <path d="M 585 270 Q 600 278 615 270" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <polygon points="600,310 595,330 605,330 600,350" fill="#EC4899" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" dur="1.5s" repeatCount="indefinite"/>
+  </polygon>
+  
+  <rect x="480" y="370" width="240" height="40" rx="8" fill="#DBEAFE" opacity="0.9"/>
+  <text x="600" y="395" font-family="Arial, sans-serif" font-size="13" fill="#1E3A8A" text-anchor="middle" font-weight="600">Customer Query</text>
+  
+  <line x1="600" y1="415" x2="600" y2="435" stroke="#0a0a60" stroke-width="3">
+    <animate attributeName="stroke-dasharray" values="0,100;20,0" dur="1s" repeatCount="indefinite"/>
+  </line>
+  <polygon points="600,435 595,425 605,425" fill="#0a0a60"/>
+  
+  <rect x="480" y="445" width="240" height="60" rx="8" fill="#EDE9FE" stroke="#0a0a60" stroke-width="2">
+    <animate attributeName="stroke-width" values="2;3;2" dur="1.5s" repeatCount="indefinite"/>
+  </rect>
+  <text x="600" y="468" font-family="Arial, sans-serif" font-size="13" fill="#0a0a60" text-anchor="middle" font-weight="bold">✓ Instant Response</text>
+  <text x="600" y="488" font-family="Arial, sans-serif" font-size="11" fill="#0a0a60" text-anchor="middle">with Real Information</text>
+  
+  <circle cx="600" cy="530" r="15" fill="#0a0a60">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <path d="M 593 530 L 598 535 L 607 523" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <text x="400" y="570" font-family="Arial, sans-serif" font-size="12" fill="#4a5568" text-anchor="middle" font-style="italic">Zero manual intervention • 100% automated • Always instant</text>
+</svg>

@@ -8,7 +8,7 @@ Disallow: /auth/
 Disallow: /dashboard/
 
 # Sitemap location
-Sitemap: https://ongridsolarpowersolutions.com/sitemap.xml
+Sitemap: https://zaakiy.io/sitemap.xml
 
 # Crawl delay for better server performance
 Crawl-delay: 1

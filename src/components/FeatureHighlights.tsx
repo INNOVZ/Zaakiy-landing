@@ -3,8 +3,8 @@
 import Image from "next/image";
 import { useState } from "react";
 
-import support from "../../public/support_animated.svg";
-import automate from "../../public/auto-response-svg.svg";
+import response from "../../public/response.svg";
+import automate from "../../public/auto-response.svg";
 import orbit from "../../public/animated_orbit.svg";
 
 const featureHighlights = [
@@ -12,7 +12,7 @@ const featureHighlights = [
     title: "No Endless conversations",
     description:
       "Responds to your customers queries with real information instantly and automatically without the need for manual intervention.",
-    illustration: support,
+    illustration: response,
     alt: "Zaakiy AI responding in a chat window",
   },
   {
@@ -36,24 +36,21 @@ export default function FeatureHighlights() {
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 rounded-3xl">
-      <div className="py-10 flex flex-col justify-center items-center">
+      <div className="order-2 flex flex-col justify-center items-center sm:order-1">
         <div className="relative flex w-full max-w-[720px] justify-center">
-          <div className="relative h-[460px] w-full sm:h-[400px]">
+          <div className="relative h-[400px] w-full sm:h-[460px] ">
             <Image
               key={featureHighlights[activeHighlight].title}
               src={featureHighlights[activeHighlight].illustration}
               alt={featureHighlights[activeHighlight].alt}
               fill
-              sizes="(min-width: 740px) 520px, 100vw"
+              sizes="(min-width: 740px) 520px, 100vw, 50vh"
               className="object-contain transition-opacity duration-500 ease-out"
             />
           </div>
         </div>
-        <p className="text-base text-center font-medium text-gray-600">
-          Connect with the tools your business already loves.
-        </p>
       </div>
-      <div className="sm:pr-20 flex flex-col justify-center">
+      <div className="order-1 sm:order-2 flex flex-col justify-center">
         {featureHighlights.map((feature, index) => {
           const isActive = activeHighlight === index;
 
@@ -81,9 +78,7 @@ export default function FeatureHighlights() {
               </button>
               <div
                 className={`overflow-hidden px-6 transition-all duration-300 ease-out ${
-                  isActive
-                    ? "max-h-40 opacity-100 pb-6"
-                    : "max-h-0 opacity-0 pb-0"
+                  isActive ? "opacity-100 pb-6" : "max-h-0 opacity-0 pb-0"
                 }`}
               >
                 <p className="text-base font-normal text-gray-600">

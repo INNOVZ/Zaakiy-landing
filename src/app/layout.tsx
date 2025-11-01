@@ -13,13 +13,16 @@ const ubuntu = Ubuntu({
 
 export const metadata: Metadata = {
   title: "Zaakiy AI | Upgrade to AI workforce",
-  description: "Making the workforce better with AI",
+  description:
+    "AI Agent that responds to your customers queries with real information instantly and automatically 24/7.",
   keywords: [
     "AI chatbot",
     "AI Agent for Your Business",
     "AI chatbot Agent for 24/7 Customer Support",
     "AI chatbot Agent for 24/7 Customer Support",
     "AI solutions in Dubai",
+    "AI chatbot solutions in Dubai",
+    "AI customer support chatbot solutions in Dubai",
     "AI marketing solutions",
     "AI enabled services",
   ].join(", "),
@@ -36,7 +39,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Zaakiy AI | Dubai's Leading AI Solutions for Business Growth",
+    title: "Zaakiy AI | Leading AI Solutions for Business Growth",
     description:
       "Transforming businesses with cutting-edge AI solutions. From chatbots to workflow automation, we empower your workforce.",
     type: "website",
@@ -45,40 +48,26 @@ export const metadata: Metadata = {
     siteName: "Zaakiy AI",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/logobl.png",
         width: 1200,
         height: 630,
-        alt: "Zaakiy AI, the chatbot that ",
+        alt: "Zaakiy AI | Upgrade to AI workforce",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "OnGrid Solar Power Solutions Pvt Ltd - Best Solar Company in Trivandrum",
+    title: "Zaakiy AI | Upgrade to AI workforce",
     description:
-      "Expert Solar Panel Installation in Trivandrum. Rooftop Solar Systems, Commercial Solar Power Solutions. Get up to ₹78,000 government subsidy.",
-    images: ["/og-image.jpg"],
+      "AI Agent that responds to your customers queries with real information instantly and automatically 24/7.",
+    images: ["/logobl.png"],
   },
   alternates: {
-    canonical: "https://zaakiy.ai",
+    canonical: "https://zaakiy.io",
   },
   other: {
-    "geo.region": "IN-KL",
+    "geo.region": "DU-AE",
     "geo.placename": "Dubai, UAE",
-    "geo.position": "8.5241;76.9366",
-    ICBM: "8.5241, 76.9366",
-    "business:contact_data:street_address":
-      "TC 37/2604(6), SHINI TOWER, KODUNGANOOR PO",
-    "business:contact_data:locality": "Vattiyoorkavu",
-    "business:contact_data:region": "Kerala",
-    "business:contact_data:postal_code": "695013",
-    "business:contact_data:country_name": "India",
-    "business:contact_data:phone_number": "7594949406",
-    "business:contact_data:email": "ongridsolarpowersolution@gmail.com",
-    "msapplication-TileColor": "#faa633",
-    "msapplication-config": "/browserconfig.xml",
-    "theme-color": "#faa633",
   },
   generator: "v0.app",
   icons: {
@@ -118,7 +107,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${ubuntu.variable} antialiased`}>
         <Nav />
         {children}
