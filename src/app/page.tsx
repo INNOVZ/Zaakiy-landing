@@ -194,12 +194,12 @@ export default function Home() {
           </p>
           <div className="btn text-bold mt-3">Chat with us !</div>
         </div>
-        <div className="mt-15 py-10 grid grid-cols-2 sm:grid-cols-4 items-center gap-2 px-10 sm:px-34 bg-[#0a0a60] rounded-3xl">
-          <div className="gap-5">
+        <div className="mt-15 py-10 grid grid-cols-2 sm:grid-cols-4 items-start gap-2 px-10 sm:px-34 bg-[#0a0a60] rounded-3xl">
+          <div className="mt-12 gap-5 h-[100%]">
             <Image
               src={logo}
               alt="logo"
-              className="w-[150] h-[250] sm:w-[250] sm:h-[250]"
+              className="w-[150] h-auto sm:w-[200] sm:h-auto"
             />
           </div>
           <div className="mt-12 gap-5 h-[100%]">

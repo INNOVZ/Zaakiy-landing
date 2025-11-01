@@ -52,7 +52,7 @@
         
         #zentria-chat-widget {
           position: fixed !important;
-          ${config.position.includes('right') ? 'right: 25px;' : 'left: 25px;'}
+          ${config.position.includes('right') ? 'right: 8px;' : 'left: 8px;'}
           bottom: 20px;
           z-index: 99999999 !important;
           font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -216,7 +216,7 @@
         /* Mobile responsive styles */
         @media (max-width: 768px) {
           #zentria-chat-widget {
-            ${config.position.includes('right') ? 'right: 15px;' : 'left: 15px;'}
+            ${config.position.includes('right') ? 'right: 6px;' : 'left: 6px;'}
             bottom: 15px;
           }
           
@@ -226,7 +226,7 @@
           }
           
           .zentria-chat-window {
-            width: calc(100vw - 30px);
+            width: calc(100vw - 20px);
             max-width: 400px;
             height: calc(100vh - 50px);
             max-height: calc(100vh - 50px);
@@ -280,7 +280,7 @@
         
         @media (max-width: 480px) {
           #zentria-chat-widget {
-            ${config.position.includes('right') ? 'right: 10px;' : 'left: 10px;'}
+            ${config.position.includes('right') ? 'right: 4px;' : 'left: 4px;'}
             bottom: 10px;
           }
           
