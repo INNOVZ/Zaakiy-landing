@@ -58,7 +58,11 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <Link href="/auth/login">
+          <Link
+            href="https://sprw.io/stt-NwNkd"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="hidden pointer text-base bg-[#0a0a60] font-normal md:flex items-center space-x-4 text-white duration-300 transition-colors px-4 py-2 rounded-lg gap-3">
               Book a Demo
               <LogIn size={20} />

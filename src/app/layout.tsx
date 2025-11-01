@@ -128,12 +128,12 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `
               (function() {
-                var script = document.createElement('script');
-                script.src = 'https://zaakiy.vercel.app/chat-widget.js';
-                script.setAttribute('data-chatbot-id', '65c0a93d-d62a-4397-97e6-9d85deaaaad6');
-                script.setAttribute('data-api-url', 'https://zaakiy-production.up.railway.app');
-                document.head.appendChild(script);
-              })();
+    var script = document.createElement('script');
+    script.src = 'https://zaakiy.vercel.app/chat-widget.js';
+    script.setAttribute('data-chatbot-id', '057aa048-f77d-44ec-aba2-a8e0d2abd11f');
+    script.setAttribute('data-api-url', 'https://zaakiy-production.up.railway.app');
+    document.head.appendChild(script);
+  })();
             `,
           }}
         />

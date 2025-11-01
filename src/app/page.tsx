@@ -1,12 +1,14 @@
 import Image from "next/image";
 // import Bot from "../../../public/bot.png";
 import { CircleCheckBig } from "lucide-react";
+import Link from "next/link";
 import PriceSection from "@/components/PricingCard";
+import FeatureHighlights from "@/components/FeatureHighlights";
 import logo from "../../public/zaakiy.svg";
-import image from "../../public/imag.svg";
 import workflow from "../../public/workflows.svg";
 import chatwindow from "../../public/ai.svg";
-import integration from "../../public/animated_orbit.svg";
+import support from "../../public/support.svg";
+
 export default function Home() {
   return (
     <>
@@ -18,9 +20,15 @@ export default function Home() {
               Our very first AI enabled virtual assistant and Intelligent
               customer support chatbot for your business.
             </p>
-            <button className="mt-8 hidden pointer bg-[#0a0a60] font-semibold md:flex items-center space-x-4 text-white hover:text-[#3fe4aa] duration-300 transition-colors px-5 py-2 rounded-lg gap-3">
-              Try it now !
-            </button>
+            <Link
+              href="https://sprw.io/stt-NwNkd"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="mt-8 hidden pointer bg-[#0a0a60] font-semibold md:flex items-center space-x-4 text-white hover:text-[#3fe4aa] duration-300 transition-colors px-5 py-2 rounded-lg gap-3">
+                Try it now !
+              </button>
+            </Link>
           </div>
           <div className="flex items-start">
             <Image
@@ -39,46 +47,7 @@ export default function Home() {
           <p className="mt-3 text-base text-center font-normal text-gray-600">
             Integrate Zaakiy AI
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 rounded-3xl">
-            <div className=" py-10 flex flex-col justify-center items-center">
-              <Image
-                src={integration}
-                alt="bot"
-                width={520}
-                height={520}
-                className="h-auto"
-              />
-              <p className="text-base text-center font-medium text-gray-600">
-                Connect with the tools your business already loves.
-              </p>
-            </div>
-            <div className="sm:pr-20 flex flex-col justify-center">
-              <h1 className="mt-8 text-xl sm:text-2xl font-bold text-[#0a0a60]">
-                No Endless conversations
-              </h1>
-              <p className="mt-3 text-base font-normal text-gray-600">
-                Responds to your customers queries with real information
-                instantly and automatically without the need for manual
-                intervention.
-              </p>
-              <h1 className="mt-8 text-xl sm:text-2xl font-bold text-[#0a0a60]">
-                Unleashed Experience
-              </h1>
-              <p className="mt-3 text-base font-normal text-gray-600">
-                Run your business 24/7 with Zaakiy AI where your customers can
-                get instant answers to their queries. Zaakiy AI optimizes your
-                business opportunities with advanced artificial intelligence,
-                ensuring efficiency and responsiveness in your industry.
-              </p>
-              <h1 className="mt-8 text-xl sm:text-2xl font-bold text-[#0a0a60]">
-                Integrate seemlessly
-              </h1>
-              <p className="mt-3 text-base font-normal text-gray-600">
-                Omnichannel AI Assistant that responds to your customers on your
-                Website, WhatsApp and Social medias and
-              </p>
-            </div>
-          </div>
+          <FeatureHighlights />
         </div>
         <div className="bg-blue-50 mt-24 py-15 flex flex-col items-center gap-2 px-10 rounded-3xl">
           <h1 className="text-3xl sm:text-4xl text-center font-bold text-[#0a0a60]">
@@ -95,21 +64,21 @@ export default function Home() {
             className="w-full h-auto rounded-3xl"
           />
         </div>
-        <div className="container mx-auto mt-24 grid grid-cols-1 sm:grid-cols-3 gap-3">
-          <div className="bg-[#1a2438] p-5 rounded-2xl flex items-end justify-between gap-10">
+        <div className="container mx-auto mt-24 grid grid-cols-1 sm:grid-cols-3 gap-10">
+          <div className="bg-[#1a2438] p-5 rounded-2xl flex items-end justify-between gap-3">
             <div className="text-3xl sm:text-5xl font-bold text-white">
               +80%
             </div>
             <p></p>
             <p className="text-base font-medium text-white">Conversion Rate</p>
           </div>
-          <div className="bg-[#1a2438] p-5 rounded-2xl flex items-end justify-between gap-3">
+          <div className="bg-[#1a2438] p-5 rounded-2xl flex items-end justify-betweenResponds to your customers queries with real information instantly and automatically without the need for manual intervention. gap-3">
             <div className="text-3xl sm:text-5xl font-bold text-white">
               +65%
             </div>
             <p></p>
             <p className="text-base font-medium text-white">
-              Customer Support Resources Saved
+              Support Resources Saved
             </p>
           </div>
           <div className="bg-[#1a2438] p-5 rounded-2xl flex items-end justify-between gap-3">
@@ -126,8 +95,8 @@ export default function Home() {
           <h1 className="text-3xl sm:text-4xl text-center font-bold text-[#0a0a60]">
             The future of customer support
           </h1>
-          <div className="mt-15 grid grid-cols-1 sm:grid-cols-2">
-            <div className="py-10 flex flex-col gap-2 px-5 sm:px-0">
+          <div className="mt-15 grid grid-cols-1 sm:grid-cols-2 gap-10">
+            <div className="order-2 py-10 flex flex-col gap-2 px-5 sm:order-1 sm:px-0">
               <p className="text-base font-medium pb-3 bg-gradient-to-r from-[#5D7DDE] to-[#6a8fff] text-transparent bg-clip-text">
                 Optimize Customer Xperience
               </p>
@@ -183,15 +152,20 @@ export default function Home() {
                   </span>
                 </li>
               </ul>
-              <div className="btn text-lg font-bold">Try it now</div>
+               <Link
+              href="https://sprw.io/stt-NwNkd"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="btn text-lg font-bold">Try it now</div></Link>
             </div>
-            <div className="flex justify-center items-center">
+            <div className="order-1 flex justify-center sm:order-2">
               <Image
-                src={image}
+                src={support}
                 alt="bot"
                 width={100}
                 height={100}
-                className="w-full sm:w-3/4 h-auto"
+                className="w-full h-auto"
               />
             </div>
           </div>
@@ -211,13 +185,14 @@ export default function Home() {
         <div className="mt-15 py-10 grid grid-cols-1 sm:grid-cols-3 items-center gap-2 px-10 sm:px-34 bg-[#0a0a60] rounded-4xl">
           <div className="mt-12 gap-5 h-[100%]">
             <Image src={logo} alt="logo" width={150} height={150} />
+            <p className="text-base text-white">UAE</p>
           </div>
           <div className="mt-12 gap-5 h-[100%]">
-            <h1 className="text-xl font-bold text-white">Products</h1>
+            <p className="text-xl font-bold text-white">Products</p>
             <p className="mt-4 text-base text-white">ZaaKy AI</p>{" "}
           </div>
           <div className="mt-12 gap-5 h-[100%]">
-            <h1 className="text-xl font-bold text-white">Company</h1>
+            <p className="text-xl font-bold text-white">Company</p>
             <p className="mt-4 text-base text-white">Home</p>
             <p className="mt-2 text-base text-white">Price</p>
             <p className="mt-2 text-base text-white">About Us</p>

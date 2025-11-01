@@ -14,8 +14,8 @@ export default function PricingCard() {
       name: "Essential",
       description: "Essential features for individuals and small teams",
       price: {
-        monthly: "AED 149.99",
-        yearly: "AED 1499.99",
+        monthly: "$40.00",
+        yearly: "$408.00",
       },
       features: [
         { name: "2000 Messages", included: true },
@@ -33,8 +33,8 @@ export default function PricingCard() {
       name: "Pro",
       description: "Perfect for growing teams and businesses",
       price: {
-        monthly: "AED 349.99",
-        yearly: "AED 2499.99",
+        monthly: "AED 100.00",
+        yearly: "AED 1062.00",
       },
       features: [
         { name: "5000 Messages", included: true },
@@ -52,8 +52,8 @@ export default function PricingCard() {
       name: "Enterprise",
       description: "Advanced features for large organizations",
       price: {
-        monthly: "AED 750",
-        yearly: "AED 5000",
+        monthly: "$250.00",
+        yearly: "$2550.00",
       },
       features: [
         { name: "10000 Messages", included: true },
