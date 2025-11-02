@@ -14,10 +14,10 @@ export default function Home() {
   return (
     <>
       <div className="mt-1 flex flex-col px-5 sm:px-16">
-        <div className="container mx-auto min-h-[90vh] grid grid-cols-1 sm:grid-cols-2 mt-15">
-          <div className="flex flex-col items-center sm:items-start">
-            <h1 className="pt-10 text-4xl sm:text-6xl mt-5 ">Meet Zaakiy</h1>
-            <p className="mt-5 text-center sm:text-left text-base font-normal">
+        <div className="container mx-auto mt-15 min-h-[90vh] grid grid-cols-1 sm:grid-cols-2">
+          <div className="flex flex-col  items-center sm:items-start gap-3">
+            <h1 className="mt-20 text-4xl sm:text-6xl">Meet Zaakiy</h1>
+            <p className="text-center sm:text-left text-base font-normal">
               Our very first AI enabled virtual assistant and Intelligent
               customer support chatbot for your business.
             </p>
@@ -26,7 +26,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="mt-8 hidden pointer bg-[#0a0a60] md:flex items-center space-x-4 text-white duration-300 transition-colors px-5 py-2 rounded-lg gap-3">
+              <button className="mt-8 hidden pointer bg-[#0a0a60] md:flex items-center space-x-4 text-white duration-300 transition-colors px-5 py-2 rounded-lg">
                 Try it now !
               </button>
             </Link>
@@ -44,7 +44,7 @@ export default function Home() {
               alt="bot"
               width={100}
               height={100}
-              className="w-full mt-[-150px] sm:w-full h-auto flex sm:hidden "
+              className="w-full mt-[-150px] sm:w-full h-auto flex sm:hidden"
             />
           </div>
         </div>
@@ -194,34 +194,42 @@ export default function Home() {
           </p>
           <div className="btn text-bold mt-3">Chat with us !</div>
         </div>
-        <div className="mt-15 py-10 grid grid-cols-2 sm:grid-cols-4 items-start gap-2 px-10 sm:px-34 bg-[#0a0a60] rounded-3xl">
-          <div className="mt-12 gap-5 h-[100%]">
+        <div className="mt-15 py-10 grid grid-cols-2 sm:grid-cols-4 items-start gap-2 sm:px-34 bg-[#0a0a60] rounded-3xl">
+          <div className="mt-12 px-5 gap-5 h-[100%]">
             <Image
               src={logo}
               alt="logo"
               className="w-[150] h-auto sm:w-[200] sm:h-auto"
             />
           </div>
-          <div className="m-12 gap-5 h-[100%]">
-            <p className="text-xl font-bold text-white">Zaakiy AI</p>
+          <div className="m-5 gap-5 h-[100%]">
+            <p className="sm:text-xl font-bold text-white  bg-gray-200/20 px-3 py-1 inline-block rounded-xl">
+              Zaakiy AI
+            </p>
             <p className="mt-4 text-base text-white"></p>{" "}
-            <p className="mt-4 text-base text-white">UAE | ITALIA | INDIA</p>
-            <div className="mt-5 flex gap-5">
+            <p className="mt-4 text-base text-white px-2">
+              UAE | ITALIA | INDIA
+            </p>
+            <div className="mt-5 flex gap-5 px-2">
               <FaInstagram color="#fff" className="w-[24px] h-[24px]" />
               <FaLinkedin color="#fff" className="w-[24px] h-[24px]" />
             </div>
           </div>
-          <div className="m-12 gap-5 h-[100%]">
-            <p className="text-xl font-bold text-white">Quick Links</p>
-            <p className="mt-4 text-base text-white">Home</p>
-            <p className="mt-2 text-base text-white">Integrations</p>
-            <p className="mt-2 text-base text-white">Price</p>
+          <div className="m-5 gap-5 h-[100%]">
+            <p className="sm:text-xl font-bold text-white bg-gray-200/20 px-3 py-1 inline-block rounded-xl">
+              Quick Links
+            </p>
+            <p className="mt-4 px-2 text-base text-white ">Home</p>
+            <p className="mt-2 px-2 text-base text-white">Integrations</p>
+            <p className="mt-2 px-2 text-base text-white">Price</p>
           </div>
-          <div className="m-12 gap-5 h-[100%]">
-            <p className="text-xl font-bold text-white">Features</p>
-            <p className="mt-4 text-base text-white">Chat Widget</p>
-            <p className="mt-2 text-base text-white">Whatsapp Bot</p>
-            <p className="mt-2 text-base text-white">Workflow Agent</p>
+          <div className="m-5 gap-5 h-[100%]">
+            <p className="sm:text-xl font-bold text-white bg-gray-200/20 px-3 py-1 inline-block rounded-xl">
+              Features
+            </p>
+            <p className="mt-4 px-2 text-base text-white">Chat Widget</p>
+            <p className="mt-2 px-2 text-base text-white">Whatsapp Bot</p>
+            <p className="mt-2 px-2 text-base text-white">Workflow Agent</p>
           </div>
         </div>
       </div>
