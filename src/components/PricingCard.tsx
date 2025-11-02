@@ -45,7 +45,7 @@ export default function PricingCard() {
         { name: "Email support", included: true },
         { name: "Custom domains", included: true },
       ],
-      cta: "Start Free Trial",
+      cta: "Book a Demo",
       highlighted: true,
     },
     {

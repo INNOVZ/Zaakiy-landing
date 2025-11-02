@@ -99,11 +99,11 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="mt-24 container mx-auto">
+        <div className="lg:bg mt-24 container mx-auto">
           <h1 className="text-3xl sm:text-4xl text-center font-bold text-[#0a0a60]">
             The future of customer support
           </h1>
-          <div className="mt-15 grid grid-cols-1 sm:grid-cols-2 gap-10">
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-10">
             <div className="order-2 py-10 flex flex-col gap-2 px-5 sm:order-1 sm:px-0">
               <p className="text-base font-medium pb-3 bg-gradient-to-r from-[#5D7DDE] to-[#6a8fff] text-transparent bg-clip-text">
                 Optimize Customer Xperience
