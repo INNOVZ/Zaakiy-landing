@@ -97,7 +97,8 @@ export default function Home() {
       </div>
       <footer className="w-full py-4">
         <p className="text-center text-gray-500 text-sm">
-          &copy; {new Date().getFullYear()} Zaakiy AI&reg;. All Rights Reserved.{" "}
+          &copy; {new Date().getFullYear()} Zaakiy AI&reg;. All Rights Reserved
+          | DesertWhales Team
         </p>
       </footer>
     </>

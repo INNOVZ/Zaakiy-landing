@@ -48,7 +48,7 @@ const Banner = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button className="mt-8 hidden pointer bg-[#0a0a60] md:flex items-center space-x-4 text-white duration-300 transition-colors px-5 py-2 rounded-lg">
+          <button className="mt-3 hidden pointer bg-[#0a0a60] md:flex items-center space-x-4 text-white duration-300 transition-colors px-5 py-2 rounded-lg">
             Try it now !
           </button>
         </Link>
