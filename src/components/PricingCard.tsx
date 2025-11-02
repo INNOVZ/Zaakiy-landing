@@ -73,12 +73,25 @@ export default function PricingCard() {
     <div className="w-full max-w-6xl mx-auto p-6">
       {/* Heading */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2  bg-gradient-to-r from-[#0a0a60] to-[#5D7DDE] text-transparent bg-clip-text">
-          Simple, transparent pricing
-        </h2>
-        <p className="text-gray-500 dark:text-gray-400">
-          Choose the the plan right for you
-        </p>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.9, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.2 }}
+        >
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2  bg-gradient-to-r from-[#0a0a60] to-[#5D7DDE] text-transparent bg-clip-text">
+            Simple, transparent pricing
+          </h2>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, filter: "blur(6px)" }}
+          whileInView={{ opacity: 1, filter: "blur(0px)" }}
+          transition={{ duration: 0.9, ease: "easeOut" }}
+        >
+          <p className="text-gray-500 dark:text-gray-400">
+            Choose the the plan right for you
+          </p>
+        </motion.div>
       </div>
 
       {/* Billing toggle */}

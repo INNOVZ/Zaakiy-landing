@@ -6,6 +6,7 @@ import { useState } from "react";
 import response from "../../public/response.svg";
 import automate from "../../public/auto-response.svg";
 import orbit from "../../public/animated_orbit.svg";
+import { motion } from "framer-motion";
 
 const featureHighlights = [
   {
@@ -35,22 +36,42 @@ export default function FeatureHighlights() {
   const [activeHighlight, setActiveHighlight] = useState(0);
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 rounded-3xl">
-      <div className="order-2 flex-col justify-center items-center sm:order-1 hidden sm:flex">
-        <div className="relative flex w-full max-w-[720px] justify-center">
-          <div className="relative h-[400px] w-full sm:h-[460px] ">
-            <Image
-              key={featureHighlights[activeHighlight].title}
-              src={featureHighlights[activeHighlight].illustration}
-              alt={featureHighlights[activeHighlight].alt}
-              fill
-              sizes="(min-width: 740px) 520px, 100vw, 50vh"
-              className="object-contain transition-opacity duration-500 ease-out"
-            />
+    <div className="bg-indigo-50 py-15 flex flex-col items-center px-10 rounded-3xl">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.2 }}
+      >
+        <h1 className="text-3xl sm:text-4xl text-center font-bold text-[#0a0a60]">
+          Transform your Business
+        </h1>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, filter: "blur(6px)" }}
+        whileInView={{ opacity: 1, filter: "blur(0px)" }}
+        transition={{ duration: 0.9, ease: "easeOut" }}
+      >
+        <p className="mt-3 text-base text-center font-normal text-gray-600">
+          Integrate Zaakiy AI
+        </p>
+      </motion.div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 rounded-3xl">
+        <div className="order-2 flex-col justify-center items-center sm:order-1 hidden sm:flex">
+          <div className="relative flex w-full max-w-[720px] justify-center">
+            <div className="relative h-[400px] w-full sm:h-[460px] ">
+              <Image
+                key={featureHighlights[activeHighlight].title}
+                src={featureHighlights[activeHighlight].illustration}
+                alt={featureHighlights[activeHighlight].alt}
+                fill
+                sizes="(min-width: 740px) 520px, 100vw, 50vh"
+                className="object-contain transition-opacity duration-500 ease-out"
+              />
+            </div>
           </div>
         </div>
-      </div>
-      {/* <div className="order-2 flex-col justify-center items-center sm:order-1 sm:hidden block">
+        {/* <div className="order-2 flex-col justify-center items-center sm:order-1 sm:hidden block">
         <div className="relative flex h-full w-full">
           <Image
             key={featureHighlights[activeHighlight].title}
@@ -61,44 +82,46 @@ export default function FeatureHighlights() {
           />
         </div>
       </div> */}
-      <div className="order-1 sm:order-2 flex flex-col justify-center">
-        {featureHighlights.map((feature, index) => {
-          const isActive = activeHighlight === index;
 
-          return (
-            <div
-              key={feature.title}
-              className={`mt-3 rounded-2xl transition-all duration-300 ease-out ${
-                isActive
-                  ? "bg-indigo-100/60 shadow-sm shadow-indigo-200/40"
-                  : "bg-transparent hover:bg-indigo-100/40"
-              }`}
-            >
-              <button
-                type="button"
-                onClick={() => setActiveHighlight(index)}
-                className={`pointer flex w-full items-center gap-2 px-6 py-4 text-left text-xl sm:text-2xl font-semibold transition-colors duration-300 ${
-                  isActive
-                    ? "text-[#0a0a60]"
-                    : "text-[#0a0a60] hover:text-[#0a0a60]"
-                }`}
-                aria-pressed={isActive}
-                aria-expanded={isActive}
-              >
-                {feature.title}
-              </button>
+        <div className="order-1 sm:order-2 flex flex-col justify-center">
+          {featureHighlights.map((feature, index) => {
+            const isActive = activeHighlight === index;
+
+            return (
               <div
-                className={`overflow-hidden px-6 transition-all duration-300 ease-out ${
-                  isActive ? "opacity-100 pb-6" : "max-h-0 opacity-0 pb-0"
+                key={feature.title}
+                className={`mt-3 rounded-2xl transition-all duration-300 ease-out ${
+                  isActive
+                    ? "bg-indigo-100/60 shadow-sm shadow-indigo-200/40"
+                    : "bg-transparent hover:bg-indigo-100/40"
                 }`}
               >
-                <p className="text-base font-normal text-gray-600">
-                  {feature.description}
-                </p>
+                <button
+                  type="button"
+                  onClick={() => setActiveHighlight(index)}
+                  className={`pointer flex w-full items-center gap-2 px-6 py-4 text-left text-xl sm:text-2xl font-semibold transition-colors duration-300 ${
+                    isActive
+                      ? "text-[#0a0a60]"
+                      : "text-[#0a0a60] hover:text-[#0a0a60]"
+                  }`}
+                  aria-pressed={isActive}
+                  aria-expanded={isActive}
+                >
+                  {feature.title}
+                </button>
+                <div
+                  className={`overflow-hidden px-6 transition-all duration-300 ease-out ${
+                    isActive ? "opacity-100 pb-6" : "max-h-0 opacity-0 pb-0"
+                  }`}
+                >
+                  <p className="text-base font-normal text-gray-600">
+                    {feature.description}
+                  </p>
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </div>
   );
