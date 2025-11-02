@@ -186,9 +186,9 @@ export default function Home() {
           <PriceSection />
         </div>
         <div className="mt-24 flex flex-col items-center gap-2 px-10 sm:px-34">
-          <h1 className="text-center text-[#5D7DDE] text-base">
+          <p className="text-center text-gray-800 text-base">
             Want to try it out?
-          </h1>
+          </p>
           <p className="text-3xl text-center font-bold text-[#0a0a60] delay-200">
             Get hands on experience with ZaaKy AI
           </p>
@@ -202,22 +202,22 @@ export default function Home() {
               className="w-[150] h-auto sm:w-[200] sm:h-auto"
             />
           </div>
-          <div className="mt-12 gap-5 h-[100%]">
+          <div className="m-12 gap-5 h-[100%]">
             <p className="text-xl font-bold text-white">Zaakiy AI</p>
             <p className="mt-4 text-base text-white"></p>{" "}
-            <p className="mt-4 text-base text-white">UAE | ITALIA</p>
+            <p className="mt-4 text-base text-white">UAE | ITALIA | INDIA</p>
             <div className="mt-5 flex gap-5">
               <FaInstagram color="#fff" className="w-[24px] h-[24px]" />
               <FaLinkedin color="#fff" className="w-[24px] h-[24px]" />
             </div>
           </div>
-          <div className="mt-12 gap-5 h-[100%]">
+          <div className="m-12 gap-5 h-[100%]">
             <p className="text-xl font-bold text-white">Quick Links</p>
             <p className="mt-4 text-base text-white">Home</p>
             <p className="mt-2 text-base text-white">Integrations</p>
             <p className="mt-2 text-base text-white">Price</p>
           </div>
-          <div className="mt-12 gap-5 h-[100%]">
+          <div className="m-12 gap-5 h-[100%]">
             <p className="text-xl font-bold text-white">Features</p>
             <p className="mt-4 text-base text-white">Chat Widget</p>
             <p className="mt-2 text-base text-white">Whatsapp Bot</p>

@@ -36,7 +36,7 @@ export default function FeatureHighlights() {
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 rounded-3xl">
-      <div className="order-2 flex flex-col justify-center items-center sm:order-1">
+      <div className="order-2 flex-col justify-center items-center sm:order-1 hidden sm:flex">
         <div className="relative flex w-full max-w-[720px] justify-center">
           <div className="relative h-[400px] w-full sm:h-[460px] ">
             <Image
@@ -50,6 +50,17 @@ export default function FeatureHighlights() {
           </div>
         </div>
       </div>
+      {/* <div className="order-2 flex-col justify-center items-center sm:order-1 sm:hidden block">
+        <div className="relative flex h-full w-full">
+          <Image
+            key={featureHighlights[activeHighlight].title}
+            src={featureHighlights[activeHighlight].illustration}
+            alt={featureHighlights[activeHighlight].alt}
+            fill
+            className="object-contain transition-opacity duration-500 ease-out"
+          />
+        </div>
+      </div> */}
       <div className="order-1 sm:order-2 flex flex-col justify-center">
         {featureHighlights.map((feature, index) => {
           const isActive = activeHighlight === index;
