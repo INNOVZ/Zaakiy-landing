@@ -77,7 +77,7 @@
     
     <!-- Chat Header - Solid Deep Navy to match app -->
     <rect x="210" y="150" width="400" height="80" rx="20" fill="#0a0f3d"/>
-    <rect x="210" y="210" width="400" height="20" rx="8" fill="#0a0f3d"/>
+    <rect x="210" y="210" width="400" height="20" rx="8" fill="#090f3eff"/>
     
     <!-- Avatar Circle with Logo -->
     <circle cx="250" cy="190" r="25" fill="none" stroke="#4a5583" stroke-width="2"/>
@@ -145,7 +145,7 @@
     <text x="250" y="810" font-family="Arial, sans-serif" font-size="15" fill="#999">Type your message...</text>
 
     <!-- Send Button -->
-    <rect x="540" y="785" width="40" height="40" rx="10" fill="#0a0f3d"/>
+    <rect x="540" y="785" width="40" height="40" rx="10" fill="#0c124aff"/>
     <text x="560" y="813" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle">➤</text>
 
     <!-- Footer Text -->
