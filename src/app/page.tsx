@@ -49,7 +49,7 @@ export default function Home() {
             Want to try it out?
           </p>
           <p className="text-3xl text-center font-bold text-[#0a0a60] delay-200">
-            Get hands on experience with ZaaKy AI
+            Get hands on experience with ZaaKiy AI
           </p>
           <Link
             href="https://sprw.io/stt-NwNkd"
