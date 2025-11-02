@@ -203,7 +203,7 @@ export default function Home() {
             />
           </div>
           <div className="m-5 gap-5 h-[100%]">
-            <p className="sm:text-xl font-bold text-white  bg-gray-200/20 px-3 py-1 inline-block rounded-xl">
+            <p className="sm:text-lg font-bold text-white  bg-gray-200/20 px-3 py-1 inline-block rounded-xl">
               Zaakiy AI
             </p>
             <p className="mt-4 text-base text-white"></p>{" "}
@@ -216,7 +216,7 @@ export default function Home() {
             </div>
           </div>
           <div className="m-5 gap-5 h-[100%]">
-            <p className="sm:text-xl font-bold text-white bg-gray-200/20 px-3 py-1 inline-block rounded-xl">
+            <p className="sm:text-lg font-bold text-white bg-gray-200/20 px-3 py-1 inline-block rounded-xl">
               Quick Links
             </p>
             <p className="mt-4 px-2 text-base text-white ">Home</p>
@@ -224,7 +224,7 @@ export default function Home() {
             <p className="mt-2 px-2 text-base text-white">Price</p>
           </div>
           <div className="m-5 gap-5 h-[100%]">
-            <p className="sm:text-xl font-bold text-white bg-gray-200/20 px-3 py-1 inline-block rounded-xl">
+            <p className="sm:text-lg font-bold text-white bg-gray-200/20 px-3 py-1 inline-block rounded-xl">
               Features
             </p>
             <p className="mt-4 px-2 text-base text-white">Chat Widget</p>
