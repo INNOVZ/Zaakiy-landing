@@ -6,6 +6,7 @@ import logo from "../../public/zaakiy.svg";
 import chatwindow from "../../public/ai.svg";
 import chatMobile from "../../public/chatmobile.svg";
 import { FaInstagram, FaLinkedin } from "react-icons/fa6";
+
 import Banner from "@/components/Banner";
 import Workflows from "@/components/Workflows";
 import RetentionCards from "@/components/RetentionCards";
@@ -49,7 +50,7 @@ export default function Home() {
             Want to try it out?
           </p>
           <p className="text-3xl text-center font-bold text-[#0a0a60] delay-200">
-            Get hands on experience with ZaaKiy AI
+            Get hands on experience with Zaakiy AI
           </p>
           <Link
             href="https://sprw.io/stt-NwNkd"

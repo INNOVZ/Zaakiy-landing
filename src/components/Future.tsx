@@ -28,7 +28,7 @@ const Future = () => {
             Interact with every new opportunity
           </h1>
           <p className="mt-3 text-base font-normal text-gray-600">
-            ZaaKy AI optimizes your business opportunities with advanced
+            Zaakiy AI optimizes your business opportunities with advanced
             artificial intelligence.
           </p>
           <ul className="py-6">
