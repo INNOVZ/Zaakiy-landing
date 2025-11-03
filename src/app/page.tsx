@@ -41,7 +41,7 @@ export default function Home() {
         <Future />
         <div
           id="pricing"
-          className="bg-[#f9fafb] mt-24 py-15 flex flex-col items-center gap-2 rounded-3xl"
+          className="bg-[#f9fafb] mt-15 py-15 flex flex-col items-center gap-2 rounded-3xl"
         >
           <PriceSection />
         </div>

@@ -10,11 +10,11 @@ import { motion } from "framer-motion";
 
 const featureHighlights = [
   {
-    title: "No Endless conversations",
+    title: "Integrate seemlessly",
     description:
-      "Responds to your customers queries with real information instantly and automatically without the need for manual intervention.",
-    illustration: response,
-    alt: "Zaakiy AI responding in a chat window",
+      "Add Zaakiy AI chat widget to your website or Web app in minutes. From landing pages to Wordpress, Shopify, native iOS, Android, or React apps, that talk to visitors in real-time, offer support when it counts, and guide users all the way to conversion. Enhanced Omnichannel experience that responds to your customers on your WhatsApp and Social Medias.",
+    illustration: orbit,
+    alt: "Orbiting integrations around Zaakiy AI",
   },
   {
     title: "Unleashed Experience",
@@ -24,11 +24,11 @@ const featureHighlights = [
     alt: "Workflow showing AI powered automations",
   },
   {
-    title: "Integrate seemlessly",
+    title: "No Endless conversations",
     description:
-      "Add Zaakiy AI chat widget to your website or Web app in minutes. From landing pages to Wordpress, Shopify, native iOS, Android, or React apps, that talk to visitors in real-time, offer support when it counts, and guide users all the way to conversion. Enhanced Omnichannel experience that responds to your customers on your WhatsApp and Social Medias.",
-    illustration: orbit,
-    alt: "Orbiting integrations around Zaakiy AI",
+      "Responds to your customers queries with real information instantly and automatically without the need for manual intervention.",
+    illustration: response,
+    alt: "Zaakiy AI responding in a chat window",
   },
 ];
 
