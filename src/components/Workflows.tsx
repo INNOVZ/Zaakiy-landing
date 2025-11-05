@@ -23,7 +23,7 @@ const Workflows = () => {
         whileInView={{ opacity: 1, filter: "blur(0px)" }}
         transition={{ duration: 0.9, ease: "easeOut" }}
       >
-        <p className="text-base font-normal text-gray-600">
+        <p className="text-base font-normal text-center text-gray-600">
           Connect your knowledge base and let Zaakiy AI handle the rest.
         </p>
       </motion.div>

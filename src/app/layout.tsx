@@ -14,7 +14,7 @@ const ubuntu = Ubuntu({
 export const metadata: Metadata = {
   title: "Zaakiy AI | Upgrade to AI workforce",
   description:
-    "AI Agent that responds to your customers queries with real information instantly and automatically 24/7.",
+    "Zaakiy AI Agent that responds to your customers queries with real information instantly and automatically 24/7.Transforming businesses with cutting-edge AI solutions. From chatbots to workflow automation, we empower your workforce.",
   keywords: [
     "AI chatbot",
     "AI Agent for Your Business",

@@ -72,7 +72,7 @@ export default function Home() {
             <p className="sm:text-base font-bold text-white  bg-gray-200/20 px-3 py-1 inline-block rounded-xl">
               Zaakiy AI
             </p>
-            <p className="mt-4 text-sm text-white px-2">UAE | ITALIA | INDIA</p>
+            <p className="mt-4 text-sm text-white px-2">UAE | ITALIA</p>
             <div className="mt-5 flex gap-5 px-2">
               <FaInstagram color="#fff" className="w-[24px] h-[24px]" />
               <FaLinkedin color="#fff" className="w-[24px] h-[24px]" />
