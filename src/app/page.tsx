@@ -60,7 +60,9 @@ export default function Home() {
             <div className="btn text-bold mt-3">Chat with us !</div>
           </Link>
         </div>
-        <div className="mt-15 py-10 grid grid-cols-2 sm:grid-cols-4 items-start gap-2 sm:px-34 bg-[#0a0a60] rounded-3xl">
+      </div>
+      <footer className="w-full py-4">
+        <div className="mt-15 py-10 grid grid-cols-2 sm:grid-cols-4 items-start gap-2 sm:px-34 bg-[#0a0a60] mx-3 rounded-2xl">
           <div className="mt-12 px-5 gap-5 h-[100%]">
             <Image
               src={logo}
@@ -95,11 +97,9 @@ export default function Home() {
             <p className="mt-2 px-2 text-sm text-white">Workflow Agent</p>
           </div>
         </div>
-      </div>
-      <footer className="w-full py-4">
-        <p className="text-center text-gray-500 text-sm">
+        <p className="text-center text-gray-500 py-3 text-sm">
           &copy; {new Date().getFullYear()} Zaakiy AI&reg;. All Rights Reserved
-          | DesertWhales Team
+          | Desertwhales Team
         </p>
       </footer>
     </>
