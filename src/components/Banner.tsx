@@ -17,7 +17,7 @@ const Banner = () => {
           damping: 20,
           delay: 0.3,
         }}
-        className="mt-20 text-4xl md:text-6xl"
+        className="mt-5 sm:mt-20 text-4xl md:text-6xl"
       >
         <h1>Meet Zaakiy</h1>
       </motion.div>
