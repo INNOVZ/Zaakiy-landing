@@ -26,7 +26,7 @@ export default function PricingCard() {
         { name: "Custom domains", included: false },
         { name: "Priority support", included: false },
       ],
-      cta: "Contact Sales",
+      cta: "Book a Demo",
       highlighted: false,
     },
     {
