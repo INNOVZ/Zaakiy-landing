@@ -6,7 +6,6 @@ import logo from "../../public/zaakiy.svg";
 import chatwindow from "../../public/ai.svg";
 import chatMobile from "../../public/chatmobile.svg";
 import { FaInstagram, FaLinkedin } from "react-icons/fa6";
-
 import Banner from "@/components/Banner";
 import Workflows from "@/components/Workflows";
 import RetentionCards from "@/components/RetentionCards";
@@ -98,8 +97,8 @@ export default function Home() {
           </div>
         </div>
         <p className="text-center text-gray-500 py-3 text-sm">
-          &copy; {new Date().getFullYear()} Zaakiy AI&reg;. All Rights Reserved
-          | Desertwhales Team
+          &copy; {new Date().getFullYear()} Zaakiy AI;. All Rights Reserved |
+          Desertwhales LLC
         </p>
       </footer>
     </>
