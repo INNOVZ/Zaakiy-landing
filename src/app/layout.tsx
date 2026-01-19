@@ -116,11 +116,11 @@ export default function RootLayout({
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
-              (function() {
+             (function() {
     var script = document.createElement('script');
     script.src = 'https://zaakiy.vercel.app/chat-widget.js';
     script.setAttribute('data-chatbot-id', '057aa048-f77d-44ec-aba2-a8e0d2abd11f');
-    script.setAttribute('data-api-url', 'https://zaakiy-staging.up.railway.app');
+    script.setAttribute('data-api-url', 'https://api.zentria.live');
     document.head.appendChild(script);
   })();
             `,
