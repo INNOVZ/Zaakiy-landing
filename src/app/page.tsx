@@ -75,7 +75,21 @@ export default function Home() {
             </p>
             <p className="mt-4 text-sm text-white px-2">UAE | ITALIA</p>
             <div className="mt-5 flex gap-5 px-2">
+              <Link
+                href="https://www.instagram.com/zaakiy_ai"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram color="#fff" className="w-[24px] h-[24px]" />
+              </Link>
               <FaInstagram color="#fff" className="w-[24px] h-[24px]" />
+              <Link
+                href="https://www.linkedin.com/company/zaakiy/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin color="#fff" className="w-[24px] h-[24px]" />
+              </Link>
               <FaLinkedin color="#fff" className="w-[24px] h-[24px]" />
             </div>
           </div>
@@ -97,8 +111,7 @@ export default function Home() {
           </div>
         </div>
         <p className="text-center text-gray-500 py-3 text-sm">
-          &copy; {new Date().getFullYear()} Zaakiy AI;. All Rights Reserved |
-          Desertwhales LLC
+          &copy; {new Date().getFullYear()} Zaakiy AI. All Rights Reserved.
         </p>
       </footer>
     </>
