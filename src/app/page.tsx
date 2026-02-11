@@ -74,13 +74,14 @@ export default function Home() {
               Zaakiy AI
             </p>
             <p className="mt-4 text-sm text-white px-2">UAE | ITALIA</p>
-            <div className="mt-5 flex gap-5 px-2">
+            <div className="mt-5 flex px-2">
               <Link
                 href="https://www.instagram.com/zaakiy_ai"
                 target="_blank"
                 rel="noopener noreferrer"
-              ></Link>
-              <FaInstagram color="#fff" className="w-[24px] h-[24px]" />
+              >
+                <FaInstagram color="#fff" className="w-[24px] h-[24px] pr-2" />
+              </Link>
               <Link
                 href="https://www.linkedin.com/company/zaakiy/"
                 target="_blank"
