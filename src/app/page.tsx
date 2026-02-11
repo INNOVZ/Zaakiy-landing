@@ -79,9 +79,7 @@ export default function Home() {
                 href="https://www.instagram.com/zaakiy_ai"
                 target="_blank"
                 rel="noopener noreferrer"
-              >
-                <FaInstagram color="#fff" className="w-[24px] h-[24px]" />
-              </Link>
+              ></Link>
               <FaInstagram color="#fff" className="w-[24px] h-[24px]" />
               <Link
                 href="https://www.linkedin.com/company/zaakiy/"
@@ -90,7 +88,6 @@ export default function Home() {
               >
                 <FaLinkedin color="#fff" className="w-[24px] h-[24px]" />
               </Link>
-              <FaLinkedin color="#fff" className="w-[24px] h-[24px]" />
             </div>
           </div>
           <div className="m-5 gap-5 h-[100%]">
